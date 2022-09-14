@@ -2,10 +2,11 @@
 ---
 title: "Documentation"
 linkTitle: "Documentation"
-weight: 20
+weight: -101
 menu:
   main:
-    weight: 20
+    weight: -101
+    pre: "<i class='fas fa-book pr-2'></i>" 
 ---
 
 {{% pageinfo %}}

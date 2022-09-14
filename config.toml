@@ -117,11 +117,6 @@ path = "github.com/google/docsy/dependencies"
 disable = false
 
 [menu]
-[[menu.main]]
-name = "Documentation"
-weight = -101
-pre = "<i class='fas fa-book pr-2'></i>"
-url = "/"
 # [[menu.main]]
 # name = "Blog"
 # weight = -100
