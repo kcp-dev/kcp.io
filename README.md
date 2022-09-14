@@ -1,2 +1,1 @@
-# kcp.io
-Website
+# docs.kcp.io
