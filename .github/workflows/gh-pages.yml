@@ -49,7 +49,7 @@ jobs:
         run: hugo --minify
 
       - name: Copy Front Page
-        run: cp -av frontpage/ public/
+        run: cp -av frontpage/* public/
 
       - name: Upload build artifact
         uses: actions/upload-pages-artifact@v1
