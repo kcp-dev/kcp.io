@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="kcp,kubernetes,control-plane,multi-cloud,multi-cluster">
+    <meta name="description" content="A horizontally scalable generic control plane based on Kubernetes.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<link rel="canonical" href="https://kcp.io/">
+	<meta name="robots" content="index, follow">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@kcp">
+	<meta name="twitter:title" content="kcp – Simplifying building massively multi-tenant services. Together.">
+	<meta name="twitter:description" content="A horizontally scalable generic control plane based on Kubernetes.">
+	<meta name="twitter:image" content="https://kcp.io/img/shida-social-card.png">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="kcp – Simplifying building massively multi-tenant services. Together.">
+	<meta property="og:title" content="kcp – Simplifying building massively multi-tenant services. Together.">
+	<meta property="og:description" content="A horizontally scalable generic control plane based on Kubernetes.">
+	<meta property="og:url" content="https://kcp.io/"> 
+	<meta property="og:image" content="https://kcp.io/img/shida-social-card.png">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    
+	<link rel="stylesheet" type="text/css" href="./all.css?4942">
+	
+    <title>kcp – Simplifying building massively multi-tenant services. Together.</title>
+<script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"></script>
+
+<script>
+ $(window).scroll(function(){
+        if($(this).scrollTop()>5){
+            $(".freedom-nav").addClass("fixed-top navbar-dark bg-dark nav-bdr");
+        }
+
+        else{
+            $(".freedom-nav").removeClass("fixed-top navbar-dark bg-dark nav-bdr");
+        }
+    })
+    //
+$(function(){
+    $(window).scroll(function(){
+        if($(this).scrollTop()>5){
+            $(".navbar .navbar-brand img").attr("src","img/light.png");
+        }
+
+        else{
+            $(".navbar .navbar-brand img").attr("src","img/dark.png");
+        }
+    })
+})
+</script>
+
+    
+<!-- Analytics -->
+ 
+<!-- Analytics END -->
+    
+</head>
+<body>
+<!-- Main container -->
+<div class="page-container">
+    
+<!-- header -->
+<div class="bloc freedom-nav bgc-white-smoke l-bloc sticky-nav" id="header">
+	<div class="container bloc-no-padding">
+		<div class="row ">
+			<div class="col align-self-center">
+				<nav class="navbar row navbar-light freedom-navbar navbar-expand-md" role="navigation">
+					<div class="container-fluid">
+						<a class="navbar-brand animated pulse-hvr" href="./"><img src="img/dark.png" alt="logo" /></a>
+						<button id="nav-toggle" type="button" class="ui-navbar-toggler navbar-toggler border-0 p-0 me-md-0 ms-auto" data-toggle="collapse" data-target=".navbar-45418" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse navbar-45418  fullscreen-nav open-down">
+							<ul class="site-navigation nav navbar-nav ms-auto">
+								<li class="nav-item">
+									<a href="/docs" class="nav-link">Documentation</a>
+								</li>
+								<li class="nav-item">
+									<a href="/blog" class="nav-link">Blog</a>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="nav-link" data-scroll-speed="1000" onclick="scrollToTarget('#contribute',this)">Contribute</a>
+								</li>
+								<li class="nav-item">
+									<a href="https://github.com/kcp-dev/kcp" class="nav-link">Github</a>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="nav-link" data-scroll-speed="1000" onclick="scrollToTarget('#community',this)">Community</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- header END -->
+
+<!-- header-logos -->
+<div class="bloc object-hidden l-bloc" id="header-logos">
+	<div class="container bloc-lg">
+		<div class="row">
+			<div class="text-center text-md-start col-lg-3">
+				<img src="img/dark.png" class="img-fluid mx-auto d-block" alt="shida dark" /><img src="img/light.png" class="img-fluid mx-auto d-block" alt="shida light" />
+			</div>
+		</div>
+	</div>
+</div>
+<!-- header-logos END -->
+
+<!-- hero -->
+<div class="bloc tc-onyx b-parallax d-bloc" id="hero">
+	<div class="parallax bg-ISS-46-Glittering-lights-of-the-American-Midwest-iss bgc-white-smoke">
+	</div>
+	<div class="container bloc-md-md bloc-md-sm bloc-md bloc-sm-lg">
+		<div class="row row-margin-bottom">
+			<div class="text-center text-lg-center text-md-center col-md-10 offset-md-1 offset-lg-0 col-lg-12">
+				<img src="img/blue-green-glow.png" class="img-fluid mx-auto d-block img-style" alt="blue green" />
+				<h1 class="mg-md text-center btn-resize-mode h1-style tc-white">
+					<strong>kcp</strong> –&nbsp;Simplifying building massively multi-tenant services. Together.
+				</h1>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- hero END -->
+
+<!-- bloc-3 -->
+<div class="bloc tc-outer-space" id="bloc-3">
+	<div class="container bloc-lg bloc-md-lg">
+		<div class="row">
+			<div class="col">
+				<h2 class="mg-md text-lg-center h2-style tc-onyx">
+					An OpenSource horizontally scalable Kubernetes-like Control Plane.
+				</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 text-center">
+				<span class="fa fa-star icon-round icon-md icon-outer-space"></span>
+				<h3 class="mg-md tc-outer-space">
+					<strong>Isolation through Workspaces</strong>
+				</h3>
+				<p>
+					A large number of independent, fully-isolated “logical clusters” known as workspaces.
+				</p>
+			</div>
+			<div class="col-md-4 text-center bloc-margin-top">
+				<span class="fa fa-star icon-round icon-md icon-outer-space"></span>
+				<h3 class="mg-md tc-outer-space">
+					<strong>Massively multi-tenant API services</strong>
+				</h3>
+				<p>
+					Enabling API service providers to offer Kubernetes-native APIs centrally using multi-tenant operators.
+				</p>
+			</div>
+			<div class="col-md-4 text-center">
+				<span class="fa fa-star icon-round icon-md icon-outer-space"></span>
+				<h3 class="mg-md tc-outer-space">
+					<strong>SaaS-like API Consumption</strong>
+				</h3>
+				<p>
+					Easy API consumption for users in their workspaces in a SaaS-like fashion.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-3 END -->
+
+<!-- timeline-header -->
+<div class="bloc tc-white-smoke bgc-true-blue d-bloc" id="timeline-header">
+	<div class="container bloc-sm-lg bloc-sm-md bloc-sm-sm bloc-sm">
+		<div class="row">
+			<div class="text-center col-lg-8 offset-lg-2 text-lg-center text-md-center col-md-10 offset-md-1">
+				<h2 class="mg-md tc-white h2-margin-bottom">
+					Our Goals
+				</h2>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- timeline-header END -->
+
+<!-- timeline -->
+<div class="bloc l-bloc" id="timeline">
+	<div class="container bloc-md bloc-no-padding-sm">
+		<div class="row row-padding-bottom">
+			<div class="text-md-start col text-lg-start align-self-center">
+				<p class="tc-onyx freedom-time-date text-lg-end text-md-end mg-clear scroll-fx-left-in-fade text-center mg-md-xs mg-clear-md text-sm-end">
+					Kubernetes at its Core
+				</p>
+			</div>
+			<div class="text-lg-center col-1 order-md-0 col-lg-1 d-sm-block d-none">
+				<div class="freedom-time-line">
+					<p class="text-center freedom-time-point mg-clear scroll-fx-down-in">
+						●
+					</p>
+				</div>
+			</div>
+			<div class="col freedom-time-cotent scroll-fx-in-fade">
+				<img src="img/Kubernetes_logo_without_workmark.svg" class="img-fluid mx-auto d-block mg-md img-timeline-style" alt="coffee%20banner" />
+				<h5 class="tc-onyx mg-lg mg-clear-sm text-center">
+					kcp takes full advantage of Kubernetes-style APIs, the glue that binds the cloud-native technology ecosystem together and imbues Kubernetes popular end-user experience, but kcp has unbound it from Kubernetes workload orchestration and clusters.<br>
+				</h5>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col freedom-time-cotent scroll-fx-in-fade order-2 order-sm-0">
+				<img src="img/creativity-new-macbook.png" class="img-fluid mx-auto d-block mg-md" alt="coffee%20banner" />
+				<h5 class="tc-onyx mg-lg mg-clear-sm text-center">
+					kcp implements fully-isolated workspaces, each acting as its own Kubernetes-like cluster, with its own URL, its own set of APIs (e.g. different CRDs), its own RBAC, but as cheap and quick as a namespace
+				</h5>
+			</div>
+			<div class="text-lg-center order-md-0 col-lg-1 d-sm-block d-none col-1">
+				<div class="freedom-time-line">
+					<p class="text-center freedom-time-point mg-clear scroll-fx-down-in">
+						●
+					</p>
+				</div>
+			</div>
+			<div class="text-md-start col text-lg-start align-self-center order-1">
+				<p class="tc-onyx freedom-time-date mg-clear scroll-fx-right-in-fade text-center mg-md-xs text-lg-start text-md-start text-sm-start">
+					Massive Multi-Tenancy
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="text-md-start col text-lg-start align-self-center">
+				<p class="tc-onyx freedom-time-date text-lg-end text-md-end mg-clear scroll-fx-left-in-fade mg-md-xs text-center text-sm-end">
+					APIs as a Service
+				</p>
+			</div>
+			<div class="text-lg-center col-1 order-md-0 col-lg-1 d-sm-block d-none">
+				<div class="freedom-time-line">
+					<p class="text-center freedom-time-point mg-clear scroll-fx-down-in">
+						●
+					</p>
+				</div>
+			</div>
+			<div class="col freedom-time-cotent scroll-fx-in-fade">
+				<img src="img/investor-macbook.png" class="img-fluid mx-auto d-block mg-md" alt="coffee%20banner" />
+				<h4 class="tc-onyx mg-lg mg-clear-sm text-center">
+					kcp extends Kube&rsquo;s CRD extension model to an API export mechanism optimized for SaaS service providers offering APIs to thousands or many tens of thousands of user workspaces. Securely and efficiently.<br>
+				</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col freedom-time-cotent scroll-fx-in-fade order-2 order-sm-0">
+				<img src="img/author-macbook.png" class="img-fluid mx-auto d-block mg-md" alt="coffee%20banner" />
+				<h4 class="tc-onyx mg-lg mg-clear-sm text-center">
+					kcp does not replace Kubernetes, but complements it.<br><br>As a global control plane to inter-connect Kubernetes clusters.<br> <br>As a backend to host Kubernetes APIs as SaaS to any Kubernetes on any platform and any cloud provider, natively.<br><br>
+				</h4>
+			</div>
+			<div class="text-lg-center col-1 order-md-0 col-lg-1 d-sm-block d-none">
+				<div class="freedom-time-line">
+					<p class="text-center freedom-time-point mg-clear scroll-fx-down-in">
+						●
+					</p>
+				</div>
+			</div>
+			<div class="text-md-start col text-lg-start align-self-center order-1">
+				<p class="tc-onyx freedom-time-date mg-clear scroll-fx-right-in-fade text-center mg-md-xs text-sm-start p-timeline-style">
+					Open – no walled Garden
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="text-md-start col text-lg-start align-self-center">
+				<p class="tc-onyx freedom-time-date text-lg-end text-md-end text-sm-end mg-clear scroll-fx-left-in-fade mg-md-xs text-center">
+					Horizontally Scalable
+				</p>
+			</div>
+			<div class="text-lg-center col-1 order-md-0 col-lg-1 d-sm-block d-none">
+				<div class="freedom-time-line">
+					<p class="text-center freedom-time-point mg-clear scroll-fx-down-in">
+						●
+					</p>
+				</div>
+			</div>
+			<div class="col freedom-time-cotent scroll-fx-in-fade">
+				<img src="img/creativity-new-macbook.png" class="img-fluid mx-auto d-block mg-md" alt="coffee%20banner" />
+				<h4 class="tc-onyx mg-lg mg-clear-sm text-center">
+					kcp schedules workspaces to shared apiservers (the shards), similarly to pods scheduled to nodes and containers on a node sharing a Linux kernel. Our ambitions are to eventually reach 1 million workspaces and 10,000 shards.<br>
+				</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col freedom-time-cotent scroll-fx-in-fade order-2 order-sm-0">
+				<img src="img/investor-macbook.png" class="img-fluid mx-auto d-block mg-md" alt="coffee%20banner" />
+				<h4 class="tc-onyx mg-lg mg-clear-sm text-center">
+					kcp intentionally only knows generic APIs, no pods or related resources. Transparent-multi-cluster is a kcp sub-project to re-add many of Kube&rsquo;s workload APIs, but reshaped to offer shared compute capacity making users forget about clusters and nodes.
+				</h4>
+			</div>
+			<div class="text-lg-center col-1 order-md-0 col-lg-1 d-sm-block d-none">
+				<div class="freedom-time-line">
+					<p class="text-center freedom-time-point mg-clear scroll-fx-down-in">
+						●
+					</p>
+				</div>
+			</div>
+			<div class="text-md-start col text-lg-start align-self-center order-1">
+				<p class="tc-onyx freedom-time-date mg-clear scroll-fx-right-in-fade text-center mg-md-xs text-sm-start">
+					Compute – Where are the pods?
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- timeline END -->
+
+<!-- contribute -->
+<div class="bloc bgc-onyx d-bloc" id="contribute">
+	<div class="container bloc-lg-lg bloc-lg-md bloc-md bloc-lg-sm">
+		<div class="row">
+			<div class="text-center text-lg-center text-md-center col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+				<h2 class="text-center tc-white mg-md">
+					We love collaboration&nbsp;
+				</h2>
+				<div class="text-center">
+					<span class="fa fa-heart none icon-red icon-xl"></span>
+				</div>
+				<h5 class="text-center mg-md">
+					We develop kcp completely in the open. Everybody is welcome to help making the vision of kcp reality. <br><br>Talk to us in person in the <a href="https://kubernetes.slack.com/archives/C021U8WSAFK">#kcp-dev</a> channel in Kubernetes Slack. Find our code at <a href="https://github.com/kcp-dev/kcp">Github</a>.<br><br>We have a weekly community meeting: every <strong>Tuesday 11am EST</strong>. Join us live! The <a href="https://github.com/kcp-dev/kcp/issues?q=is%3Aopen+is%3Aissue+label%3Acommunity-meeting">agenda is available as Github issue</a> shortly before the meeting.
+				</h5>
+			</div>
+		</div>
+		<div class="row voffset-lg">
+			<div class="text-center text-md-start text-lg-center align-self-center offset-lg-7 col-lg-4 col-md-5 offset-md-5 col-9 col-sm-6 offset-sm-4">
+				<h4 class="tc-white mg-clear text-end freedom-bold">
+					See more here how you can contribute to kcp
+				</h4>
+			</div>
+			<div class="text-center text-md-start align-self-center text-lg-center col-lg-1 col-md-2 col-3 col-sm-2">
+				<a href="https://github.com/kcp-dev/kcp/blob/main/CONTRIBUTING.md" class="btn btn-d btn-sq btn-lg freedom-more-button">⮕</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- contribute END -->
+
+<!-- video-modal -->
+<div class="bloc l-bloc" id="video-modal">
+	<div class="container bloc-lg">
+		<div class="row">
+			<div class="text-center text-lg-center col-lg-8 offset-lg-2 text-md-center">
+				<h2 class="mg-md text-center tc-onyx">
+					Look &amp; Feel as a user
+				</h2>
+				<h5 class="text-center mg-md tc-outer-space">
+					kcp is Kubernetes at its heart. Every workspaces is like a little Kubernetes cluster. You will use kubectl as you are used to. kubectl can also help to move around between different workspaces.
+				</h5><a href="#" class="btn btn-clean btn-d btn-sq btn-lg freedom-button" data-bs-toggle="modal" data-bs-target="#video">Watch Now</a>
+				<div id="video" class="modal fade" tabindex="-1" role="dialog">
+					<div class="modal-dialog modal-fill modal-dialog-centered" role="document">
+						<div class="bgc-3964 freedom-modal modal-content">
+							<div class="ratio ratio-16x9">
+								<iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=0trUxoQqdNk" frameborder="0" allow="picture-in-picture" allowfullscreen>
+								</iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- video-modal END -->
+
+<!-- testimonials -->
+<div class="bloc tc-onyx-2 bgc-white-smoke" id="testimonials">
+	<div class="container bloc-lg">
+		<div class="row">
+			<div class="text-center text-md-start col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+				<h2 class="mg-md text-center tc-onyx">
+					Testimonial Cards
+				</h2>
+				<h5 class="text-center tc-outer-space">
+					Check these three different types of testimonial cards, beautifullly designed and optimized for mobile.
+				</h5>
+			</div>
+		</div>
+		<div class="row voffset-lg">
+			<div class="text-center text-md-start col-lg-4 text-lg-start col-md-6 col-sm-8 offset-sm-2 offset-md-0">
+				<div class="card card-sq freedom-card-1 border-0">
+					<div class="card-body freedom-card-1-body">
+						<img class="img-fluid freedom-quote" src="img/quote-left-solid.png" alt="quote left-solid" />
+						<p class="mg-lg text-center">
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+						</p>
+					</div>
+					<div class="card-footer freedom-card-1-footer bgc-true-blue">
+						<img src="img/eldar-square.jpg" class="img-fluid rounded-circle mx-auto d-block freedom-card-1-image" alt="eldar round" />
+						<h4 class="text-center freedom-bold mg-clear tc-white">
+							Eldar Gezalov
+						</h4>
+						<div class="freedom-card-1-social text-lg-center">
+							<a href="https://blocsmaster.com" target="_blank"><img src="img/facebook.svg" class="img-fluid mx-auto d-block freedom-card-1-icon" alt="facebook" /></a><a href="https://blocsmaster.com" target="_blank"><img src="img/twitter.svg" class="img-fluid mx-auto d-block freedom-card-1-icon" alt="twitter" /></a><a href="https://blocsmaster.com" target="_blank"><img src="img/linkedin-in.svg" class="img-fluid mx-auto d-block freedom-card-1-icon" alt="linkedin in" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="text-center text-md-start col-lg-4 text-lg-start col-md-6 col-sm-8 offset-sm-2 offset-md-0">
+				<div class="card card-sq freedom-card-1 border-0">
+					<div class="card-body freedom-card-1-body">
+						<img class="img-fluid freedom-quote" src="img/quote-left-solid.png" alt="quote left-solid" />
+						<p class="mg-lg text-center">
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+						</p>
+					</div>
+					<div class="card-footer freedom-card-1-footer bgc-true-blue">
+						<img src="img/eldar-square.jpg" class="img-fluid rounded-circle mx-auto d-block freedom-card-1-image" alt="eldar round" />
+						<h4 class="text-center freedom-bold mg-clear tc-white">
+							Eldar Gezalov
+						</h4>
+						<div class="freedom-card-1-social text-lg-center">
+							<a href="https://blocsmaster.com" target="_blank"><img src="img/facebook.svg" class="img-fluid mx-auto d-block freedom-card-1-icon" alt="facebook" /></a><a href="https://blocsmaster.com" target="_blank"><img src="img/twitter.svg" class="img-fluid mx-auto d-block freedom-card-1-icon" alt="twitter" /></a><a href="https://blocsmaster.com" target="_blank"><img src="img/linkedin-in.svg" class="img-fluid mx-auto d-block freedom-card-1-icon" alt="linkedin in" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="text-center text-md-start col-lg-4 text-lg-start col-md-6 col-sm-8 offset-sm-2 offset-md-0">
+				<div class="card card-sq freedom-card-1 border-0">
+					<div class="card-body freedom-card-1-body">
+						<img class="img-fluid freedom-quote" src="img/quote-left-solid.png" alt="quote left-solid" />
+						<p class="mg-lg text-center">
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+						</p>
+					</div>
+					<div class="card-footer freedom-card-1-footer bgc-true-blue">
+						<img src="img/eldar-square.jpg" class="img-fluid rounded-circle mx-auto d-block freedom-card-1-image" alt="eldar round" />
+						<h4 class="text-center freedom-bold mg-clear tc-white">
+							Eldar Gezalov
+						</h4>
+						<div class="freedom-card-1-social text-lg-center">
+							<a href="https://blocsmaster.com" target="_blank"><img src="img/facebook.svg" class="img-fluid mx-auto d-block freedom-card-1-icon" alt="facebook" /></a><a href="https://blocsmaster.com" target="_blank"><img src="img/twitter.svg" class="img-fluid mx-auto d-block freedom-card-1-icon" alt="twitter" /></a><a href="https://blocsmaster.com" target="_blank"><img src="img/linkedin-in.svg" class="img-fluid mx-auto d-block freedom-card-1-icon" alt="linkedin in" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- testimonials END -->
+
+<!-- ScrollToTop Button -->
+<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1',this)"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 32 32"><path class="scroll-to-top-btn-icon" d="M30,22.656l-14-13-14,13"/></svg></a>
+<!-- ScrollToTop Button END-->
+
+
+<!-- community -->
+<div class="bloc tc-onyx-2 bgc-onyx-2 d-bloc" id="community">
+	<div class="container bloc-lg-lg bloc-md-md bloc-md-sm bloc-md">
+		<div class="row g-0 voffset-clear-md">
+			<div class="col-12">
+				<h2 class="text-center tc-white mg-clear mg-md-xs mg-md-sm mg-clear-md">
+					Follow us, discuss &amp; learn about kcp.
+				</h2>
+			</div>
+		</div>
+		<div class="row g-0 voffset voffset-md">
+			<div class="freedom-social col-md-12 col-lg-12">
+				<a href="https://twitter.com/kcp"><span class="none icon-white icon-lg github-social-logo fab fa-twitter icon-padding-top"></span></a><a href="github.com/kcp-dev/kcp"><span class="none icon-white icon-lg github-social-logo icon-margin-right fab fa-github"></span></a><a href="https://www.youtube.com/channel/UCfP_yS5uYix0ppSbm2ltS5Q"><span class="none icon-white icon-lg github-social-logo fab fa-youtube icon-white-icons-margin-right"></span></a><a href="https://groups.google.com/g/kcp-users"><span class="none icon-white icon-lg github-social-logo fa fa-mail-bulk icon-margin-left"></span></a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- community END -->
+
+<!-- footer -->
+<div class="bloc bgc-onyx tc-white d-bloc" id="footer">
+	<div class="container bloc-md">
+		<div class="row">
+			<div class="col text-center text-md-start">
+				<p class="text-center mg-clear">
+					Copyright © 2022 &nbsp;<a class="ltc-white" href="https://github.com/kcp-dev/kcp" target="_blank">The KCP Authors</a>
+				</p>
+				<div><div id="page-transition-anim" class="page-transition page-trans-up" style="background-color: rgb(0, 0, 0); animation-duration: 1s; animation-delay: 0.5s;">
+</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- footer END -->
+
+</div>
+<!-- Main container END -->
+    
+
+
+<!-- Additional JS -->
+<script src="./js/all.js?696"></script><!-- Additional JS END -->
+<script>
+$('.freedom-more-button').on('click', function(){ $('body').toggleClass('freedom-no-scroll');
+});
+
+$('.freedom-close-button').on('click', function(){ $('body').removeClass('freedom-no-scroll');
+});
+</script>
+
+</body>
+</html>
