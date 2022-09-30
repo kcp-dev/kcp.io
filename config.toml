@@ -5,6 +5,7 @@ defaultContentLanguageInSubdir = false
 enableMissingTranslationPlaceholders = true
 enableRobotsTXT = true
 enableGitInfo = true
+theme = "docsy"
 
 [taxonomies]
 tag = ""
