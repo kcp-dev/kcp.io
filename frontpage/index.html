@@ -18,9 +18,9 @@
 	<meta property="og:description" content="A horizontally scalable generic control plane based on Kubernetes.">
 	<meta property="og:url" content="https://kcp.io/"> 
 	<meta property="og:image" content="https://kcp.io/img/shida-social-card.png">
-    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="shortcut icon" type="image/png" href="favicon.png?3908">
     
-	<link rel="stylesheet" type="text/css" href="./all.css?3396">
+	<link rel="stylesheet" type="text/css" href="./all.css?8690">
 	
     <title>kcp – Simplifying building massively multi-tenant services. Together.</title>
 <script
@@ -31,11 +31,11 @@
 <script>
  $(window).scroll(function(){
         if($(this).scrollTop()>5){
-            $(".freedom-nav").addClass("fixed-top navbar-dark bg-dark nav-bdr");
+            $(".freedom-nav").addClass("fixed-top navbar-dark bg-dark nav-bdr kcp-bg-dark");
         }
 
         else{
-            $(".freedom-nav").removeClass("fixed-top navbar-dark bg-dark nav-bdr");
+            $(".freedom-nav").removeClass("fixed-top navbar-dark bg-dark nav-bdr kcp-bg-dark");
         }
     })
     //
@@ -74,8 +74,8 @@ $(function(){
 						</button>
 						<div class="collapse navbar-collapse navbar-45418  fullscreen-nav open-down">
 							<ul class="site-navigation nav navbar-nav ms-auto">
-								<li class="nav-item">
-									<a href="/docs" class="nav-link">Documentation</a>
+								<li class="nav-item kcp-navbar-menu">
+									<a href="/docs" class="nav-link float-lg-end fas fa-book"></a> <a href="/docs" class="nav-link float-lg-end">Documentation</a>
 								</li>
 								<li class="nav-item">
 									<a href="/blog" class="nav-link">Blog</a>
@@ -140,29 +140,29 @@ $(function(){
 		</div>
 		<div class="row">
 			<div class="col-md-4 text-center">
-				<span class="fa fa-star icon-round icon-md icon-outer-space"></span>
-				<h3 class="mg-md tc-outer-space">
+				<span class="fa fa-star icon-md icon-round kcp-star-icon "></span>
+				<h3 class="mg-md tc-outer-space h3-style">
 					<strong>Isolation through Workspaces</strong>
 				</h3>
-				<p>
+				<p class="p-style">
 					A large number of independent, fully-isolated “logical clusters” known as workspaces.
 				</p>
 			</div>
 			<div class="col-md-4 text-center bloc-margin-top">
-				<span class="fa fa-star icon-round icon-md icon-outer-space"></span>
-				<h3 class="mg-md tc-outer-space">
+				<span class="fa fa-star icon-round icon-md kcp-star-icon "></span>
+				<h3 class="mg-md tc-outer-space h3-bloc-3-style">
 					<strong>Massively multi-tenant API services</strong>
 				</h3>
-				<p>
+				<p class="p-bloc-3-style">
 					Enabling API service providers to offer Kubernetes-native APIs centrally using multi-tenant operators.
 				</p>
 			</div>
 			<div class="col-md-4 text-center">
-				<span class="fa fa-star icon-round icon-md icon-outer-space"></span>
-				<h3 class="mg-md tc-outer-space">
+				<span class="fa fa-star icon-round icon-md kcp-star-icon "></span>
+				<h3 class="mg-md tc-outer-space h3-3-style">
 					<strong>SaaS-like API Consumption</strong>
 				</h3>
-				<p>
+				<p class="p-3-style">
 					Easy API consumption for users in their workspaces in a SaaS-like fashion.
 				</p>
 			</div>
@@ -195,6 +195,9 @@ $(function(){
 				</p>
 			</div>
 			<div class="text-lg-center col-1 order-md-0 col-lg-1 d-sm-block d-none">
+				<div class="container-div-padding-bottom">
+					<img src="img/blue-triangle.png" class="img-fluid img-blue-triang-style kcp-triangle mx-auto d-block" alt="blue triangle" />
+				</div>
 				<div class="freedom-time-line">
 					<p class="text-center freedom-time-point mg-clear scroll-fx-down-in">
 						●
@@ -492,7 +495,7 @@ $(function(){
 
 
 <!-- Additional JS -->
-<script src="./js/all.js?4545"></script><!-- Additional JS END -->
+<script src="./js/all.js?4364"></script><!-- Additional JS END -->
 <script>
 $('.freedom-more-button').on('click', function(){ $('body').toggleClass('freedom-no-scroll');
 });
