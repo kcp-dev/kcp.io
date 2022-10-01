@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg x="73.03pt" y="113.812pt" width="129.941pt" height="46.1454pt" viewBox="73.03 113.812 129.941 46.1454" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <title>Smart Polygon</title>
+    <g id="1">
+      <defs>
+        <path id="2" d="M138.001,159.457 C138.001,159.457,202.47,114.312,202.47,114.312 C202.47,114.312,73.5309,114.312,73.5309,114.312 C73.5309,114.312,138.001,159.457,138.001,159.457 z"/>
+      </defs>
+      <use xlink:href="#2" style="fill:#0066cc;fill-opacity:1;fill-rule:evenodd;opacity:1;stroke:none;"/>
+      <use xlink:href="#2" style="fill:none;opacity:1;stroke:#0066cc;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-width:1;"/>
+    </g>
+  </defs>
+  <use xlink:href="#1"/>
+</svg>
