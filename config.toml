@@ -121,9 +121,8 @@ disable = false
 [[menu.main]]
 name = "GitHub"
 weight = -99
-pre = "<i class='fab fa-github pr-2'></i>"
 url = "https://github.com/kcp-dev/kcp/"
 [[menu.main]]
-name = "🤍 Contribute"
+name = "Contribute"
 weight = -99
 url = "https://github.com/kcp-dev/kcp/blob/main/CONTRIBUTING.md"

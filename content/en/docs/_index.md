@@ -6,7 +6,6 @@ weight: -101
 menu:
   main:
     weight: -101
-    pre: "<i class='fas fa-book pr-2'></i>" 
 ---
 
 {{% pageinfo %}}

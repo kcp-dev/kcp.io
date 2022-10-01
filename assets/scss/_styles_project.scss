@@ -1,17 +1,14 @@
 .td-navbar {
   padding-top: 0;
   padding-bottom: 0;
-
-  .navbar-brand {
-    svg {
-      display: inline-block;
-      margin: 0 10px;
-      height: 50px;
-      width: 50px;
-    }
-  }
+  min-height: 48px;
 }
 
 .td-toc {
   padding-top: 40px;
+}
+
+.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
 }
