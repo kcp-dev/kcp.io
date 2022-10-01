@@ -68,7 +68,7 @@ prism_syntax_highlighting = false
 [params.ui]
 breadcrumb_disable = false
 footer_about_disable = true
-navbar_logo = true # /assets/icons/logo.svg
+navbar_logo = true # /assets/icons/logo.png
 navbar_translucent_over_cover_disable = false
 sidebar_menu_compact = false
 sidebar_search_disable = true
@@ -118,11 +118,6 @@ path = "github.com/google/docsy/dependencies"
 disable = false
 
 [menu]
-# [[menu.main]]
-# name = "Blog"
-# weight = -100
-# pre = "<i class='fas fa-rss pr-2'></i>"
-# url = "https://blog.kubeflow.org/"
 [[menu.main]]
 name = "GitHub"
 weight = -99
