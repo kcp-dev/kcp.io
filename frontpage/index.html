@@ -18,9 +18,9 @@
 	<meta property="og:description" content="A horizontally scalable generic control plane based on Kubernetes.">
 	<meta property="og:url" content="https://kcp.io/"> 
 	<meta property="og:image" content="https://kcp.io/img/shida-social-card.png">
-    <link rel="shortcut icon" type="image/png" href="favicon.png?4957">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
     
-	<link rel="stylesheet" type="text/css" href="./all.css?1701">
+	<link rel="stylesheet" type="text/css" href="./all.css?8752">
 	
     <title>kcp – Simplifying building massively multi-tenant services. Together.</title>
 <link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
@@ -37,6 +37,9 @@
       src="https://code.jquery.com/jquery-2.2.4.min.js"
       integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
       crossorigin="anonymous"></script>
+
+<script src="/asciinema-player.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/asciinema-player.css" />
 
 <script>
  $(window).scroll(function(){
@@ -85,7 +88,7 @@ $(function(){
 						<div class="collapse navbar-collapse navbar-45418  fullscreen-nav open-down">
 							<ul class="site-navigation nav navbar-nav ms-auto">
 								<li class="nav-item kcp-navbar-menu">
-									<a href="/docs" class="nav-link float-lg-end ">Documentation</a>
+									<a href="/docs" class="nav-link float-lg-end">Documentation</a>
 								</li>
 								<li class="nav-item kcp-navbar-menu">
 									<a href="/blog" class="nav-link">Blog</a>
@@ -193,11 +196,11 @@ $(function(){
 <!-- timeline-header END -->
 
 <!-- timeline -->
-<div class="bloc l-bloc" id="timeline">
+<div class="bloc l-bloc " id="timeline">
 	<div class="container bloc-md bloc-no-padding-sm">
 		<div class="row row-padding-bottom">
 			<div class="text-md-start col text-lg-start align-self-center">
-				<p class="tc-onyx freedom-time-date text-lg-end text-md-end mg-clear scroll-fx-left-in-fade text-center mg-md-xs mg-clear-md text-sm-end">
+				<p class="tc-onyx freedom-time-date text-lg-end text-md-end mg-clear scroll-fx-left-in-fade text-center mg-md-xs mg-clear-md text-sm-end p-4-style">
 					Kubernetes at its Core
 				</p>
 			</div>
@@ -205,7 +208,7 @@ $(function(){
 				<div class="container-div-padding-bottom">
 					<img src="img/blue-triangle.png" class="img-fluid img-blue-triang-style kcp-triangle mx-auto d-block" alt="blue triangle" />
 				</div>
-				<div class="freedom-time-line">
+				<div class="freedom-time-line container-div-padding-top">
 					<p class="text-center freedom-time-point mg-clear scroll-fx-down-in">
 						●
 					</p>
@@ -220,104 +223,113 @@ $(function(){
 		</div>
 		<div class="row">
 			<div class="col freedom-time-cotent scroll-fx-in-fade order-2 order-sm-0">
-				<img src="img/creativity-new-macbook.png" class="img-fluid mx-auto d-block mg-md" alt="coffee%20banner" />
+				<div class="kcp-asciicinema-div">
+					<img src="img/notebook.png" class="img-fluid mx-auto d-block mg-md" alt="coffee%20banner" />
+					<div class="kcp-asciicinema-overlay">
+						<div class=" ">
+							<script src="https://asciinema.org/a/14.js" id="asciicast-14" async="" data-autoplay="true" data-size="small" data-fit="both"></script>
+
+							
+						</div>
+					</div>
+				</div>
 				<h5 class="tc-onyx mg-lg mg-clear-sm text-center">
-					kcp implements fully-isolated workspaces, each acting as its own Kubernetes-like cluster, with its own URL, its own set of APIs (e.g. different CRDs), its own RBAC, but as cheap and quick as a namespace
-				</h5>
+						kcp implements fully-isolated workspaces, each acting as its own Kubernetes-like cluster, with its own URL, its own set of APIs (e.g. different CRDs), its own RBAC, but as cheap and quick as a namespace
+					</h5>
 			</div>
 			<div class="text-lg-center order-md-0 col-lg-1 d-sm-block d-none col-1">
-				<div class="freedom-time-line">
-					<p class="text-center freedom-time-point mg-clear scroll-fx-down-in">
-						●
-					</p>
+					<div class="freedom-time-line">
+						<p class="text-center freedom-time-point mg-clear scroll-fx-down-in">
+							●
+						</p>
+					</div>
 				</div>
-			</div>
 			<div class="text-md-start col text-lg-start align-self-center order-1">
-				<p class="tc-onyx freedom-time-date mg-clear scroll-fx-right-in-fade text-center mg-md-xs text-lg-start text-md-start text-sm-start">
-					Massive Multi-Tenancy
-				</p>
-			</div>
+					<p class="tc-onyx freedom-time-date mg-clear scroll-fx-right-in-fade text-center mg-md-xs text-lg-start text-md-start text-sm-start p-7-style">
+						Massive Multi-Tenancy
+					</p>
+				</div>
 		</div>
 		<div class="row">
-			<div class="text-md-start col text-lg-start align-self-center">
-				<p class="tc-onyx freedom-time-date text-lg-end text-md-end mg-clear scroll-fx-left-in-fade mg-md-xs text-center text-sm-end">
-					APIs as a Service
-				</p>
+				<div class="text-md-start col text-lg-start align-self-center">
+					<p class="tc-onyx freedom-time-date text-lg-end text-md-end mg-clear scroll-fx-left-in-fade mg-md-xs text-center text-sm-end p-8-style">
+						APIs as a Service
+					</p>
+				</div>
+				<div class="text-lg-center col-1 order-md-0 col-lg-1 d-sm-block d-none">
+					<div class="freedom-time-line">
+						<p class="text-center freedom-time-point mg-clear scroll-fx-down-in">
+							●
+						</p>
+					</div>
+				</div>
+				<div class="col freedom-time-cotent scroll-fx-in-fade">
+					<img src="img/notebook.png" class="img-fluid mx-auto d-block mg-md" alt="coffee%20banner" />
+					<h4 class="tc-onyx mg-lg mg-clear-sm text-center">
+						kcp extends Kube&rsquo;s CRD extension model to an API export mechanism optimized for SaaS service providers offering APIs to thousands or many tens of thousands of user workspaces. Securely and efficiently.<br>
+					</h4>
+				</div>
 			</div>
-			<div class="text-lg-center col-1 order-md-0 col-lg-1 d-sm-block d-none">
-				<div class="freedom-time-line">
-					<p class="text-center freedom-time-point mg-clear scroll-fx-down-in">
-						●
+		<div class="row">
+				<div class="col freedom-time-cotent scroll-fx-in-fade order-2 order-sm-0">
+					<img src="img/notebook.png" class="img-fluid mx-auto d-block mg-md" alt="coffee%20banner" />
+					<h4 class="tc-onyx mg-lg mg-clear-sm text-center">
+						kcp does not replace Kubernetes, but complements it.<br><br>As a global control plane to inter-connect Kubernetes clusters.<br> <br>As a backend to host Kubernetes APIs as SaaS to any Kubernetes on any platform and any cloud provider, natively.<br><br>
+					</h4>
+				</div>
+				<div class="text-lg-center col-1 order-md-0 col-lg-1 d-sm-block d-none">
+					<div class="freedom-time-line">
+						<p class="text-center freedom-time-point mg-clear scroll-fx-down-in">
+							●
+						</p>
+					</div>
+				</div>
+				<div class="text-md-start col text-lg-start align-self-center order-1">
+					<p class="tc-onyx freedom-time-date mg-clear scroll-fx-right-in-fade text-center mg-md-xs text-sm-start p-timeline-style">
+						Open – no walled Garden
 					</p>
 				</div>
 			</div>
-			<div class="col freedom-time-cotent scroll-fx-in-fade">
-				<img src="img/investor-macbook.png" class="img-fluid mx-auto d-block mg-md" alt="coffee%20banner" />
-				<h4 class="tc-onyx mg-lg mg-clear-sm text-center">
-					kcp extends Kube&rsquo;s CRD extension model to an API export mechanism optimized for SaaS service providers offering APIs to thousands or many tens of thousands of user workspaces. Securely and efficiently.<br>
-				</h4>
-			</div>
-		</div>
 		<div class="row">
-			<div class="col freedom-time-cotent scroll-fx-in-fade order-2 order-sm-0">
-				<img src="img/author-macbook.png" class="img-fluid mx-auto d-block mg-md" alt="coffee%20banner" />
-				<h4 class="tc-onyx mg-lg mg-clear-sm text-center">
-					kcp does not replace Kubernetes, but complements it.<br><br>As a global control plane to inter-connect Kubernetes clusters.<br> <br>As a backend to host Kubernetes APIs as SaaS to any Kubernetes on any platform and any cloud provider, natively.<br><br>
-				</h4>
+				<div class="text-md-start col text-lg-start align-self-center">
+					<p class="tc-onyx freedom-time-date text-lg-end text-md-end text-sm-end mg-clear scroll-fx-left-in-fade mg-md-xs text-center p-12-style">
+						Horizontally Scalable
+					</p>
+				</div>
+				<div class="text-lg-center col-1 order-md-0 col-lg-1 d-sm-block d-none">
+					<div class="freedom-time-line">
+						<p class="text-center freedom-time-point mg-clear scroll-fx-down-in">
+							●
+						</p>
+					</div>
+				</div>
+				<div class="col freedom-time-cotent scroll-fx-in-fade">
+					<img src="img/notebook.png" class="img-fluid mx-auto d-block mg-md" alt="coffee%20banner" />
+					<h4 class="tc-onyx mg-lg mg-clear-sm text-center">
+						kcp schedules workspaces to shared apiservers (the shards), similarly to pods scheduled to nodes and containers on a node sharing a Linux kernel. Our ambitions are to eventually reach 1 million workspaces and 10,000 shards.<br>
+					</h4>
+				</div>
 			</div>
-			<div class="text-lg-center col-1 order-md-0 col-lg-1 d-sm-block d-none">
-				<div class="freedom-time-line">
-					<p class="text-center freedom-time-point mg-clear scroll-fx-down-in">
-						●
+		<div class="row">
+				<div class="col freedom-time-cotent scroll-fx-in-fade order-2 order-sm-0">
+					<img src="img/notebook.png" class="img-fluid mx-auto d-block mg-md" alt="coffee%20banner" />
+					<h4 class="tc-onyx mg-lg mg-clear-sm text-center">
+						kcp intentionally only knows generic APIs, no pods or related resources. Transparent-multi-cluster is a kcp sub-project to re-add many of Kube&rsquo;s workload APIs, but reshaped to offer shared compute capacity making users forget about clusters and nodes.
+					</h4>
+				</div>
+				<div class="text-lg-center col-1 order-md-0 col-lg-1 d-sm-block d-none">
+					<div class="freedom-time-line">
+						<p class="text-center freedom-time-point mg-clear scroll-fx-down-in">
+							●
+						</p>
+					</div>
+				</div>
+				<div class="text-md-start col text-lg-start align-self-center order-1">
+					<p class="tc-onyx freedom-time-date mg-clear scroll-fx-right-in-fade text-center mg-md-xs text-sm-start p-15-style">
+						Compute – Where are the pods?
 					</p>
 				</div>
 			</div>
-			<div class="text-md-start col text-lg-start align-self-center order-1">
-				<p class="tc-onyx freedom-time-date mg-clear scroll-fx-right-in-fade text-center mg-md-xs text-sm-start p-timeline-style">
-					Open – no walled Garden
-				</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="text-md-start col text-lg-start align-self-center">
-				<p class="tc-onyx freedom-time-date text-lg-end text-md-end text-sm-end mg-clear scroll-fx-left-in-fade mg-md-xs text-center">
-					Horizontally Scalable
-				</p>
-			</div>
-			<div class="text-lg-center col-1 order-md-0 col-lg-1 d-sm-block d-none">
-				<div class="freedom-time-line">
-					<p class="text-center freedom-time-point mg-clear scroll-fx-down-in">
-						●
-					</p>
-				</div>
-			</div>
-			<div class="col freedom-time-cotent scroll-fx-in-fade">
-				<img src="img/creativity-new-macbook.png" class="img-fluid mx-auto d-block mg-md" alt="coffee%20banner" />
-				<h4 class="tc-onyx mg-lg mg-clear-sm text-center">
-					kcp schedules workspaces to shared apiservers (the shards), similarly to pods scheduled to nodes and containers on a node sharing a Linux kernel. Our ambitions are to eventually reach 1 million workspaces and 10,000 shards.<br>
-				</h4>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col freedom-time-cotent scroll-fx-in-fade order-2 order-sm-0">
-				<img src="img/investor-macbook.png" class="img-fluid mx-auto d-block mg-md" alt="coffee%20banner" />
-				<h4 class="tc-onyx mg-lg mg-clear-sm text-center">
-					kcp intentionally only knows generic APIs, no pods or related resources. Transparent-multi-cluster is a kcp sub-project to re-add many of Kube&rsquo;s workload APIs, but reshaped to offer shared compute capacity making users forget about clusters and nodes.
-				</h4>
-			</div>
-			<div class="text-lg-center col-1 order-md-0 col-lg-1 d-sm-block d-none">
-				<div class="freedom-time-line">
-					<p class="text-center freedom-time-point mg-clear scroll-fx-down-in">
-						●
-					</p>
-				</div>
-			</div>
-			<div class="text-md-start col text-lg-start align-self-center order-1">
-				<p class="tc-onyx freedom-time-date mg-clear scroll-fx-right-in-fade text-center mg-md-xs text-sm-start">
-					Compute – Where are the pods?
-				</p>
-			</div>
-		</div>
 	</div>
 </div>
 <!-- timeline END -->
@@ -511,7 +523,7 @@ $(function(){
 
 
 <!-- Additional JS -->
-<script src="./js/all.js?2449"></script><!-- Additional JS END -->
+<script src="./js/all.js?1126"></script><!-- Additional JS END -->
 <script>
 $('.freedom-more-button').on('click', function(){ $('body').toggleClass('freedom-no-scroll');
 });
