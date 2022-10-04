@@ -7,9 +7,15 @@ enableRobotsTXT = true
 enableGitInfo = true
 theme = "docsy"
 
+# Hide tags and categories
 [taxonomies]
-tag = ""
-category = ""
+tag = "tags"
+category = "categories"
+[params.taxonomy]
+# set taxonomyCloud = [] to hide taxonomy clouds
+taxonomyCloud = []
+# set taxonomyPageHeader = [] to hide taxonomies on the page headers
+taxonomyPageHeader = [] 
 
 # Highlighting config
 pygmentsCodeFences = true
@@ -54,7 +60,7 @@ copyright = "The kcp Authors"
 archived_version = false
 version = "v0.8"
 url_latest_version = "https://docs.kcp.io/"
-github_repo = "https://github.com/kcp-dev/kcp.io"
+github_repo = "https://github.com/kcp-dev/kcp-dev.github.io"
 github_project_repo = "https://github.com/kcp-dev/kcp"
 github_subdir = "docs"
 github_branch= "main"
