@@ -1,7 +1,7 @@
 ---
 title: "CRD Reference"
 linkTitle: "CRD Reference"
-weight: 9
+weight: 5
 description: >
   Reference documentation for CRDs in kcp.
 ---

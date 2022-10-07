@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -44,6 +45,9 @@ jobs:
             ${{ runner.os }}-node-
       - run: npm install
       - run: npm ci
+
+      - name: Generate CRD reference docs
+        run: ./scripts/crd-ref-gen/run-crd-ref-gen.sh
 
       - name: Build
         run: hugo --minify
