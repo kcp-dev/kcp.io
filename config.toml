@@ -59,7 +59,7 @@ guessSyntax = "true"
 copyright = "The kcp Authors"
 archived_version = false
 version = "v0.8"
-url_latest_version = "https://docs.kcp.io/"
+url_latest_version = "https://kcp.io/"
 github_repo = "https://github.com/kcp-dev/kcp-dev.github.io"
 github_project_repo = "https://github.com/kcp-dev/kcp"
 github_subdir = "docs"
@@ -124,6 +124,10 @@ path = "github.com/google/docsy/dependencies"
 disable = false
 
 [menu]
+[[menu.main]]
+name = "Documentation"
+weight = -1000
+url = "/kcp/main"
 [[menu.main]]
 name = "GitHub"
 weight = -99
