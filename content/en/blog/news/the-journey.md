@@ -16,9 +16,8 @@ These are two foundational and yet technically small changes in the architecture
 <img src="/images/keynote-clayton-2020.png#center" alt="Kubernetes as the Control Plane for the Hybrid Cloud"/>
 </a>
 
-We have followed this thought experiment over the last 15 months, "we" is a group of experienced Kubernetes contributors, some of us in the Kubernetes project basically since its inception.
-
-While prototyping the system, we quickly realized that the small size but the large number of logical clusters opens up a green field for innovation: a logical cluster alone, even if we re-add the well-known workload APIs, is not a very exciting idea. Projects in the ecosystem like [k3s](https://k3s.io/), [vcluster](https://github.com/loft-sh/vcluster) or service offerings like [Civo](https://civo.com) have pioneered small, personal clusters for years. With logical clusters we are trying to go farther by reducing the control plane cost by another magnitude or two, giving these companies a tool for optimizing their services even more. But the real value and the actual innovation happens when re-connecting those new logical clusters into something bigger.
+While prototyping the system over the past 15 months, we quickly realized that the small size but the large number of 
+logical clusters opens up a green field for innovation: a logical cluster alone, even if we re-add the well-known workload APIs, is not a very exciting idea. Projects in the ecosystem like [k3s](https://k3s.io/), [vcluster](https://github.com/loft-sh/vcluster) or service offerings like [Civo](https://civo.com) have pioneered small, personal clusters for years. With logical clusters we are trying to go farther by reducing the control plane cost by another magnitude or two, giving these companies a tool for optimizing their services even more. But the real value and the actual innovation happens when re-connecting those new logical clusters into something bigger.
 
 This "something bigger" can have different shapes. Let's look at the use-cases we encountered.
  
@@ -45,7 +44,9 @@ We like to say that Kubernetes is at the core of kcp. And this is the perfect ex
 # A workspace is Kubernetes. No compromises.
 
 with the nuance that we intentionally disable workload APIs to start fresh as a generic control plane.
-Towards a new Extension Model for Service Providers
+
+# Towards a new Extension Model for Service Providers
+
 We have mentioned one subtle, innocently looking detail where APIExports/APIBindings differ from normal CRDs, and this has a giant consequence for the philosophy of how people think of APIs in kcp:
 
 In a workspace that is bound to an API of e.g. widgets, provided by an API service provider in another workspace, the user can do `kubectl get widgets` as expected, but a `kubectl get crd widgets.group.com` will not show anything.
@@ -61,7 +62,9 @@ Think about it: in this model the user, for the first time, can really pick & ch
 And there we are: we have built an extension mechanism for multi-tenant services. Workspaces give us isolation for logical clusters, i.e. multi-tenancy and APIExport+APIBinding allow a service provider to publish an API to many tenants and run controllers to act on the resource. This is a persona the Kubernetes ecosystem has not known.
 
 Of course, there are many more details about how a multi-tenant controller actually looks like. How can the service provider access tenant data both securely and efficiently? How does this scale? But this is a topic for another post.
-Massively Multi-Tenancy
+
+# Massive Multi-Tenancy
+
 Some readers at this point will argue that multi-tenancy on Kubernetes has been solved, even for operators and APIs. [Red Hat's Operator Life-Cycle Operator (OLM)](https://olm.operatorframework.io/) for example allows to delegate operator installation to users and it explores ways for multi-tenant operators. Also OpenShift and others have implemented multi-tenancy on-top of Kubernetes for a long time.
 
 Furthermore, projects around the [vcluster](https://www.vcluster.com/) idea found other ways to implement multi-tenancy. In a vcluster setup users can even install their own CRDs.
