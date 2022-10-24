@@ -28,4 +28,4 @@ Join us at the KubeCon NA 2022 in Detroit. A number of people from the community
 - **Oct 27, 2:30pm** Virtual KubeCon Red Hat Booth: [**Virtual Office Hours: KCP**](https://kubecon-cloudnativecon-na.com/login/?msg=501) – Andy Goldstein, Nolan Brubaker, Steve Kuznetsov – Login to the KubeCon virtual platform and navigate to the Red Hat booth to join
 - **Oct 28, 11am** KubeCon Talk: [**Crossplane Intro And Deep Dive - The Cloud Native Control Plane Framework**](https://kccncna2022.sched.com/event/182Ow) – Jared Watts, Matthias Luebken & Nic Cope, Upbound; Bob Haddleton, Nokia
 
-For many more details about what kcp is and how we arrived where we are today, please enjoy reading the second blog post: [**kcp: the journey**](the-journey.md).
+For many more details about what kcp is and how we arrived where we are today, please enjoy reading the second blog post: [**kcp: the journey**](/blog/2022/10/19/kcp-the-journey/).
