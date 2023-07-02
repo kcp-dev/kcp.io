@@ -6,15 +6,15 @@
           <span class="sr-only">Home</span>
           {{ $image := resources.Get "icons/logo.svg" }}
           <img src="{{ $image.RelPermalink }}" class="h-8 mr-3">
-          <span class="text-xl font-bold whitespace-nowrap">kcp.io</span>
+          <span class="font-bold whitespace-nowrap">{{ .Site.Title }}</span>
         </a>
       </div>
 
       <div class="md:flex md:items-center md:gap-12 font-bold">
         <nav aria-label="Global" class="hidden md:block">
           <ul class="flex items-center gap-6 text-sm">
-              {{- with index site.Menus "main" }}
-              {{- range . }}
+            {{- with index site.Menus "main" }}
+            {{- range . }}
             <li>
               <a
                 class="text-black transition hover:text-black/75"
@@ -23,36 +23,8 @@
                 {{ .Name }}
               </a>
             </li>
-
-              {{- end}}
-              {{- end }}
-
-            <li>
-              <a
-                class="text-black transition hover:text-black/75"
-                href="/"
-              >
-                Blog
-              </a>
-            </li>
-
-            <li>
-              <a
-                class="text-black transition hover:text-black/75"
-                href="/"
-              >
-                Contribute
-              </a>
-            </li>
-
-            <li>
-              <a
-                class="text-black transition hover:text-black/75"
-                href="/"
-              >
-                GitHub
-              </a>
-            </li>
+            {{- end}}
+            {{- end }}
           </ul>
         </nav>
 

@@ -1,8 +1,4 @@
-<!doctype html>
-<html>
-{{ partial "head.html" . }}
-<body>
-    {{ partial "nav.html" . }}
+{{ define "main" }}
     {{ partial "hero.html" . }}
     
     <div class="max-w-screen-lg mx-auto grid grid-rows-1 gap-8 -mt-4">
@@ -31,8 +27,4 @@
         </p>
         </div>
     </div>
-
-
-    {{ partial "footer.html" . }}
-</body>
-</html>
+{{ end }}
