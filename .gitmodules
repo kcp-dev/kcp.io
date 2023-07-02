@@ -1,0 +1,3 @@
+[submodule "themes/kcp/layouts/partials/flowbite-icons"]
+	path = themes/kcp/layouts/partials/flowbite-icons
+	url = https://github.com/themesberg/flowbite-icons.git
