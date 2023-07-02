@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+{{ partial "head.html" . }}
+<body>
+    {{ partial "nav.html" . }}
+    {{ partial "hero.html" . }}
+    
+    <div class="max-w-screen-lg mx-auto grid grid-rows-1 gap-8 -mt-4">
+        <div class="relative grid grid-cols-3 gap-4">
+            {{ partial "components/card.html" (dict "title" "Isolation through Workspaces" "text" "A large number of independent, fully-isolated “logical clusters” known as workspaces.") }}
+            {{ partial "components/card.html" (dict "title" "Massively multi-tenant API services" "text" "Enabling API service providers to offer Kubernetes-native APIs centrally using multi-tenant operators.") }}
+            {{ partial "components/card.html" (dict "title" "SaaS-like API Consumption" "text" "Easy API consumption for users in their workspaces in a SaaS-like fashion.") }}
+        </div>
+
+        <div>
+            <h2 class="text-center text-2xl p-8 font-extrabold sm:text-3xl">Our Project Goals</h2>
+            {{ partial "goals.html" }}
+        </div>
+
+        <div class="text-center">
+            <h2 class="text-2xl p-8 font-extrabold sm:text-3xl">We Love Collaboration</h2>
+            <p>We develop kcp completely in the open. Everybody is welcome to help making the vision of kcp reality.</p>
+            <p>
+            Meet us in person in the <a href="https://kubernetes.slack.com/archives/C021U8WSAFK">#kcp-dev</a> channel in Kubernetes Slack. Find our code at <a href="https://github.com/kcp-dev/kcp">Github</a>.
+            </p>
+        <a href="https://github.com/kcp-dev/kcp/graphs/contributors" class="w-max m-8">
+            <img src="https://contrib.rocks/image?repo=kcp-dev/kcp&amp;columns=10&amp;max=100" class="mx-auto">
+        </a>
+        <p class="text-xl">
+        We have a weekly community meeting: every Thursday 11am EST. Join us live! The agenda is available as Github issue shortly before the meeting. See the recordings on Youtube.
+        </p>
+        </div>
+    </div>
+
+
+    {{ partial "footer.html" . }}
+</body>
+</html>

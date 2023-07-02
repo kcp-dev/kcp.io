@@ -5,7 +5,7 @@ defaultContentLanguageInSubdir = false
 enableMissingTranslationPlaceholders = true
 enableRobotsTXT = true
 enableGitInfo = true
-theme = "docsy"
+theme = "kcp"
 
 # Hide tags and categories
 [taxonomies]
@@ -43,7 +43,7 @@ id = "UA-00000000-0"
 [languages.en]
 title = 'kcp – a Kubernetes-like multi-tenant control plane'
 description = "kcp documentation"
-languageName ="English"
+languageName = "English"
 weight = 1
 
 [markup]
@@ -117,11 +117,8 @@ desc = "Discuss development issues around the project"
 extended = true
 min = "0.75.0"
 [[module.imports]]
-path = "github.com/google/docsy"
-disable = false
-[[module.imports]]
-path = "github.com/google/docsy/dependencies"
-disable = false
+ignoreImports = false
+path = "kcp"
 
 [menu]
 [[menu.main]]

@@ -1,27 +1,22 @@
 {
-  "name": "kcp-documentation",
-  "version": "0.8",
-  "description": "kcp documentation",
-  "main": "none.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "get:submodule": "git submodule update --init --depth 1",
-    "_prepare:docsy": "cd themes/docsy && npm install",
-    "prepare": "npm run get:submodule && npm run _prepare:docsy"
+  "comments": {
+    "dependencies": {},
+    "devDependencies": {
+      "autoprefixer": "kcp",
+      "postcss": "kcp",
+      "postcss-cli": "kcp",
+      "postcss-import": "kcp",
+      "tailwindcss": "kcp"
+    }
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kcp-dev/kcp-dev.github.io.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kcp-dev/kcp-dev.github.io/issues"
-  },
-  "homepage": "https://github.com/kcp-dev/kcp#readme",
+  "dependencies": {},
   "devDependencies": {
-    "autoprefixer": "^10.4.12",
-    "postcss": "^8.3.7",
-    "postcss-cli": "^9.1.0"
-  }
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0",
+    "tailwindcss": "^3.3.2"
+  },
+  "name": "kcp.io",
+  "version": "0.1.0"
 }
