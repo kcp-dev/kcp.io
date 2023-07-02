@@ -5,6 +5,7 @@ defaultContentLanguageInSubdir = false
 enableMissingTranslationPlaceholders = true
 enableRobotsTXT = true
 enableGitInfo = true
+
 theme = "kcp"
 
 # Hide tags and categories
@@ -41,10 +42,11 @@ id = "UA-00000000-0"
 
 [languages]
 [languages.en]
-title = 'kcp – a Kubernetes-like multi-tenant control plane'
-description = "kcp documentation"
+title = 'kcp.io'
 languageName = "English"
 weight = 1
+[languages.en.params]
+description = "kcp documentation"
 
 [markup]
 [markup.goldmark]
@@ -56,7 +58,9 @@ style = "monokai"
 guessSyntax = "true"
 
 [params]
-copyright = "The kcp Authors"
+copyright = "2021-2023. The kcp Authors"
+footer_note = "Kubernetes and the Kubernetes logo are registered trademarks of The Linux Foundation."
+
 archived_version = false
 version = "v0.8"
 url_latest_version = "https://kcp.io/"
@@ -71,42 +75,67 @@ offlineSearch = false
 
 prism_syntax_highlighting = false
 
-[params.ui]
-breadcrumb_disable = false
-footer_about_disable = true
-navbar_logo = true # /assets/icons/logo.png
-navbar_translucent_over_cover_disable = false
-sidebar_menu_compact = false
-sidebar_search_disable = true
+[menu]
+
+[[menu.main]]
+name = "Documentation"
+weight = -1000
+url = "https://docs.kcp.io/kcp/main"
+[[menu.main]]
+name = "GitHub"
+weight = -99
+url = "https://github.com/kcp-dev/kcp/"
+[[menu.main]]
+name = "Contribute"
+weight = -99
+url = "https://github.com/kcp-dev/kcp/blob/main/CONTRIBUTING.md"
 
 [params.links]
-# End user relevant links. These will show up on left side of footer and in the community page if you have one.
-[[params.links.user]]
-name = "User mailing list"
-url = "https://groups.google.com/g/kcp-users"
-icon = "fa fa-envelope"
-desc = "Discussion and help from your fellow users"
-[[params.links.user]]
-name ="Twitter"
-url = "https://twitter.com/kcp"
-icon = "fab fa-twitter"
-desc = "Follow us on Twitter to get the latest news!"
-# Developer relevant links. These will show up on right side of footer and in the community page if you have one.
-[[params.links.developer]]
+
+[[params.links.social]]
 name = "GitHub"
+brand = "github"
 url = "https://github.com/kcp-dev/kcp"
-icon = "fab fa-github"
-desc = "Development takes place here!"
-[[params.links.developer]]
-name = "Slack"
+
+[[params.links.social]]
+name = "Twitter"
+brand = "twitter"
+url = "https://twitter.com/kcp"
+
+[params.links.footer]
+
+[params.links.footer.community]
+name = "Community"
+[[params.links.footer.community.links]]
+name = "Kubernetes Slack"
 url = "https://kubernetes.slack.com/archives/C021U8WSAFK"
-icon = "fab fa-slack"
-desc = "Chat with other project developers"
-[[params.links.developer]]
-name = "Developer mailing list"
+[[params.links.footer.community.links]]
+name = "Code of Conduct"
+url = "https://github.com/kcp-dev/kcp/blob/main/code-of-conduct.md"
+[[params.links.footer.community.links]]
+name = "User Mailing List"
+url = "https://groups.google.com/g/kcp-users"
+
+[params.links.footer.developer]
+name = "Developer Resources"
+[[params.links.footer.developer.links]]
+name = "Governance"
+url = "https://github.com/kcp-dev/kcp/blob/main/GOVERNANCE.md"
+[[params.links.footer.developer.links]]
+name = "How to Contribute"
+url = "https://github.com/kcp-dev/kcp/blob/main/CONTRIBUTING.md"
+[[params.links.footer.developer.links]]
+name = "Developer Mailing List"
 url = "https://groups.google.com/g/kcp-dev"
-icon = "fa fa-envelope"
-desc = "Discuss development issues around the project"
+
+[params.links.footer.helpful]
+name = "Helpful Links"
+[[params.links.footer.helpful.links]]
+name = "Documentation"
+url = "https://docs.kcp.io"
+[[params.links.footer.helpful.links]]
+name = "Report a Vulnerability"
+url = "https://github.com/kcp-dev/kcp/blob/main/SECURITY.md"
 
 # hugo module configuration
 
@@ -120,16 +149,3 @@ min = "0.75.0"
 ignoreImports = false
 path = "kcp"
 
-[menu]
-[[menu.main]]
-name = "Documentation"
-weight = -1000
-url = "https://docs.kcp.io/kcp/main"
-[[menu.main]]
-name = "GitHub"
-weight = -99
-url = "https://github.com/kcp-dev/kcp/"
-[[menu.main]]
-name = "Contribute"
-weight = -99
-url = "https://github.com/kcp-dev/kcp/blob/main/CONTRIBUTING.md"
