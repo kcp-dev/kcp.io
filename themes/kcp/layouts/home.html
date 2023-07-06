@@ -1,7 +1,7 @@
 {{ define "main" }}
     {{ partial "hero.html" . }}
     
-    <div class="max-w-screen-lg mx-auto grid grid-rows-1 gap-8 -mt-4">
+    <div class="max-w-screen-xl mx-auto grid grid-rows-1 gap-8 -mt-4">
         <div class="relative grid grid-cols-3 gap-4">
             {{ partial "components/card.html" (dict "title" "Isolation through Workspaces" "text" "A large number of independent, fully-isolated “logical clusters” known as workspaces.") }}
             {{ partial "components/card.html" (dict "title" "Massively multi-tenant API services" "text" "Enabling API service providers to offer Kubernetes-native APIs centrally using multi-tenant operators.") }}
