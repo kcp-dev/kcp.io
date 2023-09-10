@@ -5,7 +5,7 @@
 <div class="mx-auto max-w-screen-md px-4 py-16 sm:px-6 lg:px-8 text-lg">
     <h1 class="text-3xl font-extrabold sm:text-4xl">{{ .Title }}</h1>
     <time class="text-gray-700/75">{{ .Date.Format "Monday Jan 2, 2006" }}</time>
-    <div class="leading-7 mt-8 space-y-4 [&>h1]:text-2xl [&>h1]:font-bold [&>h2]:text-xl [&>h2]:font-bold [&>h3]:text-lg [&>h3]:font-bold [&>ul]:list-disc [&>ul]:ml-8 [&>ol]:list-decimal [&>ol]:ml-8">
+    <div class="leading-7 mt-8 space-y-4 [&>h1]:text-2xl [&>h1]:font-bold [&>h2]:text-xl [&>h2]:font-bold [&>h3]:text-lg [&>h3]:font-bold [&>ul]:list-disc [&>ul]:ml-8 [&>ol]:list-decimal [&>ol]:ml-8 [&>p>a]:text-cyan-600 [&>p>*>a]:text-cyan-600">
         {{ .Content }}
     </div>
 </div>

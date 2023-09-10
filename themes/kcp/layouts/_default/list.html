@@ -2,7 +2,7 @@
 <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
     {{ with .CurrentSection.OutputFormats.Get "rss" -}}
     <div class="grid justify-items-end">
-        <a class="inline-block rounded border px-4 py-3 flex space-x-4 focus:outline-none focus:ring border-cyan-600 bg-cyan-600 text-white text-white hover:bg-transparent hover:text-cyan-600" title="RSS" href="{{ .Permalink | safeURL }}" target="_blank" rel="noopener">
+        <a class="inline-block w-full rounded bg-white px-12 py-3 text-sm font-medium text-cyan-600 shadow hover:text-cyan-700 focus:outline-none focus:ring active:text-cyan-500 sm:w-auto" title="RSS" href="{{ .Permalink | safeURL }}" target="_blank" rel="noopener">
             <p>RSS Feed</p>
          </a>
     </div>

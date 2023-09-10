@@ -11,27 +11,27 @@
   >
     <div class="max-w-xl ltr:sm:text-left rtl:sm:text-right">
       <h1 class="text-3xl font-extrabold sm:text-5xl">
-        Building massively multi-tenant services.
+        {{ .Site.Data.home.data.hero.header }}
 
         <strong class="block font-extrabold text-cyan-600">
-          Together.
+        {{ .Site.Data.home.data.hero.subheader }}
         </strong>
       </h1>
 
       <p class="mt-4 max-w-lg sm:text-xl/relaxed">
-        An Open Source horizontally scalable Control Plane for Kubernetes APIs.
+        {{ .Site.Data.home.data.hero.tagline }}
       </p>
 
       <div class="mt-8 flex flex-wrap gap-4 text-center">
         <a
-          href="#"
+            href="{{ .Site.Data.home.data.hero.buttons.get_started }}"
           class="block w-full rounded bg-cyan-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-cyan-700 focus:outline-none focus:ring active:bg-cyan-500 sm:w-auto"
         >
           Get Started
         </a>
 
         <a
-          href="#"
+          href="{{ .Site.Data.home.data.buttons.learn_more }}"
           class="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-cyan-600 shadow hover:text-cyan-700 focus:outline-none focus:ring active:text-cyan-500 sm:w-auto"
         >
           Learn More

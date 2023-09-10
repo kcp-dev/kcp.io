@@ -1,0 +1,53 @@
+hero:
+  header: "Building Massively Multi-Tenant Services."
+  subheader: "Together."
+  tagline: "An Open Source horizontally scalable Control Plane for Kubernetes APIs"
+  buttons:
+    get_started: https://docs.kcp.io/kcp/v0.11/#quickstart
+    learn_more: https://docs.kcp.io/kcp/v0.11/concepts/
+
+
+cards:
+  - title: "Isolation through Workspaces"
+    text: "A large number of independent, fully-isolated 'logical clusters' known as workspaces."
+  - title: "Massively Multi-Tenant API Services"
+    text: "Enabling API service providers to offer Kubernetes-native APIs centrally using multi-tenant operators."
+  - title: "SaaS-like API Consumption"
+    text: "Easy API consumption for users in their workspaces in a SaaS-like fashion."
+
+goals:
+  - title: "Kubernetes at its Core. No Fork. No Fragmentation."
+    text: |-
+      kcp takes full advantage of Kubernetes API conventions, the glue that binds the cloud-native technology ecosystem together and imbues Kubernetes popular end-user experience, but kcp has unbound it from Kubernetes workload orchestration and clusters.
+      
+      One rule that is set in stone: kcp exposes 100% pure Kubernetes APIs by using the latest Kubernetes releases as the basis.
+
+      We live and breath Kubernetes and the community. No compromises.
+  - title: "Massive Multi-Tenancy"
+    text: |-
+      kcp implements fully-isolated workspaces, each acting as its own Kubernetes-like cluster, with its own URL, its own set of APIs (e.g. different CRDs), its own RBAC, but as cheap and quick as a namespace
+  - title: "APIs as a Service"
+    text: |-
+      kcp extends Kube’s CRD extension model to an API export mechanism optimized for SaaS service providers offering APIs to thousands or many tens of thousands of user workspaces. Securely and efficiently.
+  - title: "Open - No Walled Garden"
+    text: |-
+      kcp does not replace Kubernetes, but complements it. As a global control plane to inter-connect Kubernetes clusters. As a backend to host Kubernetes APIs as SaaS to any Kubernetes on any platform and any cloud provider, natively.
+  - title: "Horizontally Scalable"
+    text: |-
+      kcp schedules workspaces to shared apiservers (the shards), similarly to pods scheduled to nodes and containers on a node sharing a Linux kernel. Our ambitions are to eventually reach 1 million workspaces and 10,000 shards.
+  - title: "Beyond Compute – Where are the Pods?"
+    text: |-
+      kcp intentionally only knows generic APIs, no pods or related resources. Transparent-multi-cluster is an experimental kcp add-on to re-add some of Kube’s workload APIs, but reshaped to offer shared compute capacity making users forget about clusters and nodes.
+
+community:
+  title: "We Love Collaboration"
+  text: |-
+    We develop kcp completely in the open. Everybody is welcome to help making the vision of kcp reality.
+
+    Meet us in person in the [#kcp-dev](https://kubernetes.slack.com/archives/C021U8WSAFK) channel in Kubernetes Slack. Find our code on [GitHub](https://github.com/kcp-dev/kcp).
+
+    [![Grid of contributors on GitHub](https://contrib.rocks/image?repo=kcp-dev/kcp&amp;columns=10&amp;max=100 "Contributor Grid")](https://github.com/kcp-dev/kcp/graphs/contributors)
+
+    We have a weekly community meeting: every Thursday 11am EST. Join us live! The [agenda is available as GitHub issue](https://github.com/kcp-dev/kcp/issues?q=is%3Aopen+is%3Aissue+label%3Acommunity-meeting) shortly before the meeting. See the [recordings on YouTube](https://www.youtube.com/channel/UCfP_yS5uYix0ppSbm2ltS5Q).
+
+
