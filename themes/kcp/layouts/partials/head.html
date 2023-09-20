@@ -12,4 +12,6 @@
         {{ .Site.Title }}
     {{ end }}</title>
     {{- partialCached "css.html" . }}
+    {{ $alpineJs := resources.Get "js/alpine.min.js" | fingerprint }}
+    <script defer src="{{ $alpineJs.Permalink }}"></script>
 </head>
