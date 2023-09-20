@@ -1,6 +1,7 @@
-{{ $image := resources.Get "images/logo.png" }}
+{{- $image := resources.Get "images/logo.png" }}
 <section
-  class="mx-auto max-w-screen-xl relative bg-no-repeat bg-[url('/images/logo.png')] bg-center sm:bg-right bg-[length:26rem]"
+    class="mx-auto max-w-screen-xl relative bg-no-repeat bg-center sm:bg-right bg-[length:26rem]"
+    style="background-image: url('{{ $image.RelPermalink }}');"
 >
   <div
     class="absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"
