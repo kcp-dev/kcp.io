@@ -22,13 +22,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          submodules: true # Fetch Hugo themes (true OR recursive)
+          submodules: true # Fetch flowbite-icons
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: "0.102.3"
+          hugo-version: "0.118.2"
           extended: true
 
       # install npm dependencies
@@ -48,9 +48,6 @@ jobs:
 
       - name: Build
         run: hugo --minify
-
-      - name: Copy Front Page
-        run: cp -av frontpage/* public/
 
       - name: Upload build artifact
         uses: actions/upload-pages-artifact@v1
