@@ -1,4 +1,4 @@
-baseURL = 'http://kcp-dev.github.io/'
+baseURL = 'https://kcp.io'
 contentDir = "content/en"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
