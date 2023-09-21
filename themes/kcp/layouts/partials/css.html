@@ -1,0 +1,7 @@
+{{- $styles := resources.Get "css/main.css" | resources.PostCSS (dict "config" "./themes/kcp/" )}}
+{{- if hugo.IsProduction }}
+	{{- $styles = $styles | minify | fingerprint | resources.PostProcess }}
+{{- else }}
+	{{- $styles = $styles | resources.ExecuteAsTemplate (printf "css/index.dev.%v.css" now.UnixMilli) .}}
+{{- end }}
+<link href="{{ $styles.RelPermalink }}" rel="stylesheet">

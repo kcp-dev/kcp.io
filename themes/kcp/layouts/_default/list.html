@@ -1,0 +1,38 @@
+{{ define "main" }}
+<div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+    {{ with .CurrentSection.OutputFormats.Get "rss" -}}
+    <div class="grid justify-items-end">
+        <a class="inline-block w-full rounded bg-white px-12 py-3 text-sm font-medium text-cyan-600 shadow hover:text-cyan-700 focus:outline-none focus:ring active:text-cyan-500 sm:w-auto" title="RSS" href="{{ .Permalink | safeURL }}" target="_blank" rel="noopener">
+            <p>RSS Feed</p>
+         </a>
+    </div>
+    {{ end -}}
+    {{ $pages := .Pages }}
+    {{ if (and .Parent .Parent.IsHome) }}
+    {{ $pages = (where .Site.RegularPages "Section" .Section) }}
+    {{ end }}
+    {{ $paginator := .Paginate ($pages.GroupByDate "2006" "desc") }}
+    {{ range $paginator.PageGroups }}
+    <div>
+        <h1 class="text-2xl font-extrabold sm:text-3xl">{{ .Key }}</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 sm:divide-x">
+        {{ range .Pages }}
+            <article class="p-8">
+                <time datetime="{{ .Date.Format "2006-01-02" }}" class="block text-xs text-gray-500">
+                    {{ .Date.Format "Monday Jan 2, 2006" }}
+                </time>
+                <a href="{{ .Permalink }}" class="font-bold text-lg">{{ .Title }}</a>
+                <p class="text-gray-500 mt-2 text-justify">{{ .Plain | safeHTML | truncate 250 }}</p>
+                <p class="text-xs text-right mt-2">published in {{ .CurrentSection.LinkTitle }}</p>
+          </article>
+        {{ end }}
+        </div>
+    </div>
+    {{ end }}
+
+    <nav class="flex justify-between mt-0">
+        <a {{if $paginator.HasPrev }}href="{{.PrevInSection.RelPermalink}}" {{end}}class="{{if not $paginator.HasPrev}}text-gray-500/50{{end}}"><span class="mr-1">←</span>Previous</a>
+        <a {{if $paginator.HasNext }}href="{{.NextInSection.RelPermalink}}" {{end}}class="{{if not $paginator.HasNext}}text-gray-500/50{{end}}">Next<span class="ml-1">→</span></a>
+    </nav>
+</div>
+{{ end }}

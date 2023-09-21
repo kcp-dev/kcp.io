@@ -1,0 +1,68 @@
+<footer class="bg-white">
+  <div
+    class="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8"
+  >
+    <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+      <div>
+        <p class="mt-4 max-w-xs text-gray-500">
+          {{ .Site.Params.footer_note }}
+        </p>
+
+
+      {{- if .Site.Params.links.social }}
+      <p class="mt-8">Find us on</p>
+
+        <ul class="mt-2 flex gap-6">
+            {{ range .Site.Params.links.social }}
+          <li>
+            <a
+                href="{{ .url }}"
+              rel="noreferrer"
+              target="_blank"
+              class="text-gray-700 transition hover:opacity-75"
+            >
+            <span class="sr-only">{{ .name }}</span>
+
+              <svg
+                class="h-6 w-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+              {{ partial (printf "flowbite-icons/src/solid/brands/%s.svg" .brand) }}
+            </svg>
+            </a>
+          </li>
+          {{- end }}
+        </ul>
+        {{- end }}
+        <p class="mt-4 text-xs text-gray-400">
+        This page uses <a href="https://github.com/themesberg/flowbite-icons">flowbite-icons</a> and <a href="https://alpinejs.dev">alpine.js</a>, licensed under MIT License.
+        </p>
+      </div>
+
+      <div
+        class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4"
+      >
+        {{- range .Site.Params.links.footer }}
+        <div>
+            <p class="font-medium text-gray-900">{{ .name }}</p>
+            <ul class="mt-6 space-y-4 text-sm">
+                {{- range .links }}
+                <li>
+                  <a href="{{ .url }}" class="text-gray-700 transition hover:opacity-75" target="_blank">
+                    {{ .name }}
+                  </a>
+                </li>
+                {{- end }}
+            </ul>
+        </div>
+        {{- end }}
+      </div>
+    </div>
+
+    <p class="text-xs text-gray-500">
+        &copy; {{ .Site.Params.copyright }}.
+    </p>
+  </div>
+</footer>
