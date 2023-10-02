@@ -3,8 +3,8 @@ hero:
   subheader: "Together."
   tagline: "An Open Source horizontally scalable Control Plane for Kubernetes APIs"
   buttons:
-    get_started: https://docs.kcp.io/kcp/v0.11/#quickstart
-    learn_more: https://docs.kcp.io/kcp/v0.11/concepts/
+    get_started: https://docs.kcp.io/kcp/v0.20/#quickstart
+    learn_more: https://docs.kcp.io/kcp/v0.20/concepts/
 
 
 cards:
@@ -48,6 +48,6 @@ community:
 
     [![Grid of contributors on GitHub](https://contrib.rocks/image?repo=kcp-dev/kcp&amp;columns=10&amp;max=100 "Contributor Grid")](https://github.com/kcp-dev/kcp/graphs/contributors)
 
-    We have a weekly community meeting: every Thursday 11am EST. Join us live! The [agenda is available as GitHub issue](https://github.com/kcp-dev/kcp/issues?q=is%3Aopen+is%3Aissue+label%3Acommunity-meeting) shortly before the meeting. See the [recordings on YouTube](https://www.youtube.com/channel/UCfP_yS5uYix0ppSbm2ltS5Q).
+    We have a weekly community meeting: every Thursday 11am EST. Join us live! The [agenda is available as a Google doc](https://docs.google.com/document/d/1PrEhbmq1WfxFv1fTikDBZzXEIJkUWVHdqDFxaY1Ply4). For past meetings, see the [recordings on YouTube](https://www.youtube.com/channel/UCfP_yS5uYix0ppSbm2ltS5Q).
 
 
