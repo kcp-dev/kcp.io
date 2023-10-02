@@ -59,12 +59,13 @@ guessSyntax = "true"
 
 [params]
 copyright = "2021-2023. The kcp Authors"
-footer_note = "Kubernetes and the Kubernetes logo are registered trademarks of The Linux Foundation."
+footer_note = "Kubernetes and the Kubernetes logo are registered trademarks of The Linux Foundation® (TLF)."
+footer_cncf_show = true
+footer_cncf_note = "We are a Cloud Native Computing Foundation sandbox project."
 
 archived_version = false
-version = "v0.8"
 url_latest_version = "https://kcp.io/"
-github_repo = "https://github.com/kcp-dev/kcp-dev.github.io"
+github_repo = "https://github.com/kcp-dev/kcp.io"
 github_project_repo = "https://github.com/kcp-dev/kcp"
 github_subdir = "docs"
 github_branch= "main"
@@ -84,7 +85,7 @@ url = "https://docs.kcp.io/kcp/main"
 [[menu.main]]
 name = "GitHub"
 weight = -99
-url = "https://github.com/kcp-dev/kcp/"
+url = "https://github.com/kcp-dev/kcp"
 [[menu.main]]
 name = "Contribute"
 weight = -99
@@ -102,16 +103,21 @@ name = "Twitter"
 brand = "twitter"
 url = "https://twitter.com/kcp"
 
+[[params.links.social]]
+name = "YouTube"
+brand = "youtube"
+url = "https://www.youtube.com/channel/UCfP_yS5uYix0ppSbm2ltS5Q"
+
 [params.links.footer]
 
 [params.links.footer.community]
 name = "Community"
 [[params.links.footer.community.links]]
-name = "Kubernetes Slack"
-url = "https://kubernetes.slack.com/archives/C021U8WSAFK"
-[[params.links.footer.community.links]]
 name = "Code of Conduct"
 url = "https://github.com/kcp-dev/kcp/blob/main/code-of-conduct.md"
+[[params.links.footer.community.links]]
+name = "Kubernetes Slack"
+url = "https://kubernetes.slack.com/archives/C021U8WSAFK"
 [[params.links.footer.community.links]]
 name = "User Mailing List"
 url = "https://groups.google.com/g/kcp-users"
@@ -119,11 +125,11 @@ url = "https://groups.google.com/g/kcp-users"
 [params.links.footer.developer]
 name = "Developer Resources"
 [[params.links.footer.developer.links]]
-name = "Governance"
-url = "https://github.com/kcp-dev/kcp/blob/main/GOVERNANCE.md"
-[[params.links.footer.developer.links]]
 name = "How to Contribute"
 url = "https://github.com/kcp-dev/kcp/blob/main/CONTRIBUTING.md"
+[[params.links.footer.developer.links]]
+name = "Website Source"
+url = "https://github.com/kcp-dev/kcp.io"
 [[params.links.footer.developer.links]]
 name = "Developer Mailing List"
 url = "https://groups.google.com/g/kcp-dev"
@@ -136,6 +142,15 @@ url = "https://docs.kcp.io"
 [[params.links.footer.helpful.links]]
 name = "Report a Vulnerability"
 url = "https://github.com/kcp-dev/kcp/blob/main/SECURITY.md"
+
+[params.links.footer.policies]
+name = "Policies"
+[[params.links.footer.policies.links]]
+name = "Governance"
+url = "https://github.com/kcp-dev/kcp/blob/main/GOVERNANCE.md"
+[[params.links.footer.policies.links]]
+name = "Trademark Usage"
+url = "https://www.linuxfoundation.org/trademark-usage/"
 
 # hugo module configuration
 

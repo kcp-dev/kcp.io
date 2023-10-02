@@ -2,43 +2,51 @@
   <div
     class="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8"
   >
-    <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
-      <div>
-        <p class="mt-4 max-w-xs text-gray-500">
+    <div class="grid grid-cols-1 gap-8 lg:grid-cols-3 text-xs text-gray-500">
+      <div class="md:max-w-sm">
+        {{- if .Site.Params.footer_cncf_show }}
+        {{- $cncf_logo := resources.Get "images/cncf-color.png" }}
+        <img style="max-width: 300px;" src="{{ $cncf_logo.RelPermalink }}" alt="Cloud Native Computing Foundation Logo">
+        <p class="mt-4">
+            {{ .Site.Params.footer_cncf_note }}
+        </p>
+        {{- end }}
+        <p class="mt-4 text-gray-500">
           {{ .Site.Params.footer_note }}
         </p>
+        <p class="mt-4">
+            &copy; {{ .Site.Params.copyright }}.
+        </p>
 
-
-      {{- if .Site.Params.links.social }}
-      <p class="mt-8">Find us on</p>
-
+        {{- if .Site.Params.links.social }}
+        <p class="mt-4">Find us on</p>
         <ul class="mt-2 flex gap-6">
-            {{ range .Site.Params.links.social }}
-          <li>
-            <a
-                href="{{ .url }}"
-              rel="noreferrer"
-              target="_blank"
-              class="text-gray-700 transition hover:opacity-75"
-            >
-            <span class="sr-only">{{ .name }}</span>
+        {{ range .Site.Params.links.social }}
+            <li>
+                <a
+                    href="{{ .url }}"
+                    rel="noreferrer"
+                    target="_blank"
+                    class="text-gray-700 transition hover:opacity-75"
+                >
+                    <span class="sr-only">{{ .name }}</span>
 
-              <svg
-                class="h-6 w-6"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-              {{ partial (printf "flowbite-icons/src/solid/brands/%s.svg" .brand) }}
-            </svg>
-            </a>
-          </li>
-          {{- end }}
+                    <svg
+                        class="h-6 w-6"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+                        {{ partial (printf "flowbite-icons/src/solid/brands/%s.svg" .brand) }}
+                    </svg>
+                </a>
+            </li>
+        {{- end }}
         </ul>
         {{- end }}
-        <p class="mt-4 text-xs text-gray-400">
+    <p class="mt-8 text-gray-400">
         This page uses <a href="https://github.com/themesberg/flowbite-icons">flowbite-icons</a> and <a href="https://alpinejs.dev">alpine.js</a>, licensed under MIT License.
-        </p>
+     </p>
       </div>
 
       <div
@@ -60,9 +68,5 @@
         {{- end }}
       </div>
     </div>
-
-    <p class="text-xs text-gray-500">
-        &copy; {{ .Site.Params.copyright }}.
-    </p>
   </div>
 </footer>
