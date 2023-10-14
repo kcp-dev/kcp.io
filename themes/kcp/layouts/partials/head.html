@@ -9,7 +9,15 @@
     {{ template "_internal/twitter_cards.html" . }}
     {{- partial "favicons.html" }}
     <title>{{ block "title" . }}
-        {{ .Site.Title }}
+        {{ if .IsHome }}
+            {{ if .Site.Params.Description }}
+                {{ .Site.Params.Description }} -  {{ .Site.Title }}
+            {{ else }}
+                {{ .Site.Title }}
+            {{ end }}
+        {{ else }}
+            {{ .Title }} - {{ .Site.Title }}
+        {{ end }}
     {{ end }}</title>
     {{- partialCached "css.html" . }}
     {{ $alpineJs := resources.Get "js/alpine.min.js" | fingerprint }}

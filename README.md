@@ -1,3 +1,17 @@
-# kcp Documentation
+# kcp.io
 
-This repository contains the documentation for the [kcp](https://github.com/kcp-dev/kcp). It is published to https://kcp-dev.github.io, which is soon supposed to be available under https://docs.kcp.io.
+This repository contains the [Hugo](https://gohugo.io) files for [kcp.io](https://kcp.io), the official website of the kcp project.
+
+## Development
+
+To set up a local development environment, make sure to have `git`, `npm` and `hugo` available. After checking out the repository, make sure dependencies and submodules are pulled:
+
+```sh
+$ npm ci && git submodule update --init
+```
+
+Afterwards, run `hugo` and visit [localhost:1313](http://localhost:1313):
+
+```sh
+$ hugo serve
+```
