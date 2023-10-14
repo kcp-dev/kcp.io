@@ -46,7 +46,7 @@ title = 'kcp.io'
 languageName = "English"
 weight = 1
 [languages.en.params]
-description = "kcp documentation"
+description = "Horizontally Scalable Control Plane for Kubernetes APIs"
 
 [markup]
 [markup.goldmark]

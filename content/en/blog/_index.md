@@ -1,5 +1,5 @@
 ---
-title: "kcp Blog"
+title: "Blog"
 linkTitle: "Blog"
 menu:
   main:
