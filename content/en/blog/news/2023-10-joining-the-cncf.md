@@ -10,7 +10,7 @@ If you haven't checked in with the kcp project in a while, let us bring you up t
 
 A group of committed organizations and individuals decided to respond to the call for action and established a [new project governance](https://github.com/kcp-dev/kcp/blob/main/GOVERNANCE.md) and bootstrapped a [new list of maintainers](https://github.com/kcp-dev/kcp/pull/2953) to lead kcp as a community project. Since then, more people have joined the list of maintainers to drive the kcp project forward. We relaunched kcp.io in a new design recently to commemorate the "new" kcp project.
 
-From the inception of the new project governance, it was clear that kcp does not exist in a vacuum. It is a citizen of the Kubernetes ecosystem and as such, joining the CNCF to formalize that citizenship was the obvious and natural road to take. Thankfully, after hearing our case, the [Technical Oversight Committee (TOC)](https://www.cncf.io/people/technical-oversight-committee/) decided to accept us into the CNCF Sandbox program.
+From the inception of the new project governance, it was clear that kcp does not exist in a vacuum. It is a citizen of the Kubernetes ecosystem and as such, joining the CNCF to formalize that citizenship was the obvious and natural road to take. Eventually, after evaluating our application, the [Technical Oversight Committee (TOC)](https://www.cncf.io/people/technical-oversight-committee/) decided to accept us into the CNCF Sandbox program.
 
 Obviously, we are beyond excited about this decision and about the amazing community of open source projects we are joining. It is incredibly humbling to become a part of the CNCF community - in a way, it feels like coming home.
 
