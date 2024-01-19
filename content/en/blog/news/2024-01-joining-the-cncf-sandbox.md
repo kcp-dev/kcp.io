@@ -2,6 +2,10 @@
 title: "Joining the CNCF Sandbox"
 linkTitle: "Joining the CNCF Sandbox"
 date: 2024-01-24
+tags:
+  - cncf
+  - sandbox
+  - community
 ---
 
 With the new year still fresh, we have big news to share. We are thrilled to announce that kcp has joined the CNCF and completed onboarding as a CNCF Sandbox project. A huge thanks to the sponsors of [our application](https://github.com/cncf/sandbox/issues/47). It is an honor to be among the greatest open source projects that our ecosystem has to offer!
