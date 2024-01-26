@@ -3,8 +3,8 @@ hero:
   subheader: "Together."
   tagline: "An Open Source horizontally scalable Control Plane for Kubernetes APIs"
   buttons:
-    get_started: https://docs.kcp.io/kcp/v0.20/#quickstart
-    learn_more: https://docs.kcp.io/kcp/v0.20/concepts/
+    get_started: https://docs.kcp.io/kcp/v0.22/#quickstart
+    learn_more: https://docs.kcp.io/kcp/v0.22/concepts/
 
 
 cards:
