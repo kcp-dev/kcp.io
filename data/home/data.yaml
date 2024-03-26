@@ -1,19 +1,22 @@
 hero:
-  header: "Building Massively Multi-Tenant Services."
+  header: "Building Massively Multi-Tenant Platforms."
   subheader: "Together."
-  tagline: "An Open Source horizontally scalable Control Plane for Kubernetes APIs"
+  tagline: "An open source horizontally scalable control plane for Kubernetes-like APIs."
   buttons:
-    get_started: https://docs.kcp.io/kcp/v0.22/#quickstart
-    learn_more: https://docs.kcp.io/kcp/v0.22/concepts/
-
+    get_started: https://docs.kcp.io/kcp/v0.23/#quickstart
+    learn_more: https://docs.kcp.io/kcp/v0.23/concepts/
 
 cards:
-  - title: "Isolation through Workspaces"
-    text: "A large number of independent, fully-isolated 'logical clusters' known as workspaces."
-  - title: "Massively Multi-Tenant API Services"
-    text: "Enabling API service providers to offer Kubernetes-native APIs centrally using multi-tenant operators."
-  - title: "SaaS-like API Consumption"
-    text: "Easy API consumption for users in their workspaces in a SaaS-like fashion."
+  - title: "A Framework for Platforms"
+    text: "kcp allows building platforms and SaaS-like services with technology already known to platform engineers: Kubernetes and its API capabilities."
+  - title: "Multi-Tenancy at Scale"
+    text: "Workspaces allow teams to work without interference from others when consuming platform services. Meanwhile, services are implemented as global operators."
+  - title: "Dedicated to Community"
+    text: "kcp is a CNCF Sandbox project and is proud to be part of the community. We value respectful collaboration with contributors and upstream projects above all."
+
+video:
+  embed_url: "https://www.youtube.com/embed/7op_r9R0fCo?si=qLvtdrTGFcnvU_iD"
+  description: "Why Kubernetes is Inappropriate for Platforms, and How to Make it Better. @ KubeCon + CloudNativeCon EU 2024"
 
 goals:
   - title: "Kubernetes at its Core. No Fork. No Fragmentation."
@@ -46,7 +49,7 @@ community:
 
     Meet us in person in the [#kcp-dev](https://kubernetes.slack.com/archives/C021U8WSAFK) channel in Kubernetes Slack. Find our code on [GitHub](https://github.com/kcp-dev/kcp).
 
-    [![Grid of contributors on GitHub](https://contrib.rocks/image?repo=kcp-dev/kcp&amp;columns=10&amp;max=100 "Contributor Grid")](https://github.com/kcp-dev/kcp/graphs/contributors)
+    [![Grid of contributors on GitHub](https://contrib.rocks/image?repo=kcp-dev/kcp&amp;columns=15&amp;max=100 "Contributor Grid")](https://github.com/kcp-dev/kcp/graphs/contributors)
 
     We have a bi-weekly community meeting: every second Thursday at 11am EST (5pm CET). Join us live! Agenda and next dates are available as a [Google doc](https://docs.google.com/document/d/1PrEhbmq1WfxFv1fTikDBZzXEIJkUWVHdqDFxaY1Ply4). For past meetings, see the [recordings on YouTube](https://www.youtube.com/channel/UCfP_yS5uYix0ppSbm2ltS5Q).
 
