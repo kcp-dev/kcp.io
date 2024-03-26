@@ -22,15 +22,23 @@ goals:
   - title: "Multi-Tenancy for Peace of Mind."
     text: |-
       kcp implements fully-isolated workspaces, each acting as its own Kubernetes-like cluster, with its own URL endpoint, its own set of APIs (e.g. different CRDs), its own RBAC, but as cheap and quick as a namespace.
+
+      Changing workspaces is as easy as changing directories with our kubectl plugin.
   - title: "APIs as a Service."
     text: |-
       kcp extends Kubernetes' CRD extension model to an API export mechanism optimized for SaaS service providers offering APIs to thousands or many tens of thousands of user workspaces -- Securely and efficiently.
+
+      Centrally provide APIs to users and implement one set of operators that is capable of reconciling all resources created from your API in any workspace.
   - title: "Building Block, Not Walled Garden."
     text: |-
-      kcp does not replace Kubernetes, but complements it as a backend to host Kubernetes-like APIs as SaaS. Connect whatever service your teams need by writing an operator that understands kcp. Operate Kubernetes clusters from kcp as central control plane.
+      kcp does not replace Kubernetes, but complements it as a backend to host Kubernetes-like APIs as SaaS.
+
+      Connect whatever service your teams need by writing an operator that understands kcp. Operate Kubernetes clusters from kcp as central control plane.
   - title: "Work at Global Scale."
     text: |-
-      kcp schedules workspaces to kcp instances called shards, similarly to pods get scheduled to nodes. Our ambitions are to eventually reach 1 million workspaces and 10,000 shards.
+      kcp schedules workspaces to kcp instances called shards, similarly to pods get scheduled to nodes.
+
+      Our ambitions are to eventually reach 1 million workspaces and 10,000 shards.
   - title: "Beyond Compute."
     text: |-
       kcp intentionally only knows generic APIs, no pods or related resources. Our goal is to build a control plane for form factors beyond container orchestration.
