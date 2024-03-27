@@ -1,29 +1,17 @@
-<div class="space-y-4">
-{{ range .Site.Data.home.data.goals }}
-  <details class="group [&_summary::-webkit-details-marker]:hidden">
-    <summary
-      class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
-    >
-      <h2 class="font-semibold text-lg">{{ .title }}</h2>
-
-      <svg
-        class="h-5 w-5 shrink-0 transition duration-300 group-open:-rotate-180"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M19 9l-7 7-7-7"
-        />
-      </svg>
-    </summary>
-    <div class="mt-4 px-4 leading-relaxed text-gray-700 [&>p]:pt-4">
-        {{ .text | markdownify }}
+{{- $colors := slice "shakespeare" "mantis" "havelock-blue" -}}
+<div class="grid sm:grid-cols-2">
+{{ range $index, $element := .Site.Data.home.data.goals }}
+    {{ if not (modBool $index 2) }}
+    <div></div>
+    {{- end }}
+    <div class="{{- if modBool $index 2 -}}sm:text-right{{- end }} p-4 {{ if ne $index 0 -}}sm:-mt-12{{- end }}">
+        <h2 class="tracking-tight inline-block font-black text-3xl bg-gradient-to-r font-black text-transparent bg-clip-text {{ if modBool $index 2 -}}from-havelock-blue-500 to-shakespeare-500 {{- else -}}from-shakespeare-500 to-mantis-500{{- end -}}">{{ $element.title }}</h2>
+        <div class="mt-2 leading-relaxed text-justify text-xl font-light [&>p]:pt-2">
+            {{ $element.text | markdownify }}
+        </div>
     </div>
-  </details>
+    {{ if modBool $index 2 }}
+    <div></div>
+    {{- end }}
 {{ end }}
 </div>

@@ -1,22 +1,51 @@
 {{ define "main" }}
     {{ partial "hero.html" . }}
     
-    <div class="max-w-screen-xl mx-auto grid grid-rows-1 gap-8 -mt-4 p-4">
+    <div class="max-w-screen-xl mx-auto grid grid-rows-1 gap-8 p-4">
         <div class="relative grid grid-cols-1 sm:grid-cols-3 gap-4">
         {{ range .Site.Data.home.data.cards }}
             {{ partial "components/card.html" . }}
         {{ end }}
         </div>
+    </div>
 
-        <div>
-            <h2 class="text-center text-2xl p-8 font-extrabold sm:text-3xl">Our Project Goals</h2>
-            {{ partial "goals.html" . }}
+    <div class="bg-shakespeare-50 my-4 sm:-mt-28 sm:pt-28">
+        <div class="max-w-screen-xl mx-auto grid grid-rows-1 sm:grid-cols-2 gap-8 -mt-4 p-4">
+            <div class="my-4 mx-auto text-right flex">
+                <div class="m-auto">
+                    <span class="font-black text-4xl bg-gradient-to-r from-havelock-blue-500 via-shakespeare-500 to-mantis-500 font-black text-transparent bg-clip-text">Watch the latest video about kcp</span>
+                    <p class="text-xl font-light mt-4">{{ .Site.Data.home.data.video.description }}</p>
+                </div>
+            </div>
+          <div class="mx-auto my-4 w-full">
+              <iframe class="rounded-lg aspect-video max-w-xl w-full" src="{{ .Site.Data.home.data.video.embed_url }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
         </div>
+    </div>
 
-        <div class="text-center max-w-3xl mx-auto [&>p>a>img]:mx-auto [&>p>a]:text-cyan-600 [&>p]:m-8">
-            <h2 class="text-2xl p-8 font-extrabold sm:text-3xl">{{ .Site.Data.home.data.community.title }}</h2>
-
-            {{ .Site.Data.home.data.community.text | markdownify }}
+    <div class="my-4">
+        <div class="max-w-screen-xl mx-auto">
+            <h2 class="text-center text-5xl p-12 font-black">Our Project Goals</h2>
         </div>
+    </div>
+
+
+    <div class="my-4">
+        <div class="max-w-screen-xl mx-auto">
+                {{ partial "goals.html" . }}
+            </div>
+        </div>
+    </div>
+
+    <div class="my-4">
+        <div class="max-w-screen-xl mx-auto">
+        <div class="text-center mx-auto">
+            <h2 class="text-5xl p-12 font-black">{{ .Site.Data.home.data.community.title }}</h2>
+
+            <div class="font-light text-xl [&>p>a>img]:mx-auto [&>p>a]:text-shakespeare-600 [&>p]:m-8">
+                {{ .Site.Data.home.data.community.text | markdownify }}
+            </div>
+        </div>
+    </div>
     </div>
 {{ end }}

@@ -1,4 +1,4 @@
-{{- $image := resources.Get "images/logo.png" }}
+{{- $image := resources.Get "icons/logo.svg" }}
 <section
     class="mx-auto max-w-screen-xl relative bg-no-repeat bg-center sm:bg-right bg-[length:26rem]"
     style="background-image: url('{{ $image.RelPermalink }}');"
@@ -8,32 +8,32 @@
   ></div>
 
   <div
-    class="relative px-4 py-32 sm:px-6 lg:flex lg:items-center lg:px-8"
+    class="relative py-36 sm:px-6 lg:flex lg:items-center px-4"
   >
-    <div class="max-w-xl ltr:sm:text-left rtl:sm:text-right">
-      <h1 class="text-3xl font-extrabold sm:text-5xl">
+    <div class="max-w-2xl ltr:sm:text-left rtl:sm:text-right">
+      <h1 class="font-black text-6xl tracking-tight">
         {{ .Site.Data.home.data.hero.header }}
 
-        <strong class="block font-extrabold text-cyan-600">
+        <strong class="bg-gradient-to-r from-havelock-blue-500 via-shakespeare-500 to-mantis-500 font-black text-transparent bg-clip-text">
         {{ .Site.Data.home.data.hero.subheader }}
         </strong>
       </h1>
 
-      <p class="mt-4 max-w-lg sm:text-xl/relaxed">
+      <p class="mt-4 max-w-lg text-xl/relaxed font-light">
         {{ .Site.Data.home.data.hero.tagline }}
       </p>
 
       <div class="mt-8 flex flex-wrap gap-4 text-center">
         <a
             href="{{ .Site.Data.home.data.hero.buttons.get_started }}"
-          class="block w-full rounded bg-cyan-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-cyan-700 focus:outline-none focus:ring active:bg-cyan-500 sm:w-auto"
+          class="block transition w-full rounded bg-shakespeare-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-shakespeare-700 focus:outline-none focus:ring active:bg-shakespeare-500 sm:w-auto"
         >
           Get Started
         </a>
 
         <a
           href="{{ .Site.Data.home.data.hero.buttons.learn_more }}"
-          class="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-cyan-600 shadow hover:text-cyan-700 focus:outline-none focus:ring active:text-cyan-500 sm:w-auto"
+          class="block transition w-full rounded bg-white px-12 py-3 text-sm font-medium text-shakespeare-600 shadow hover:text-shakespeare-700 focus:outline-none focus:ring active:text-shakespeare-500 sm:w-auto"
         >
           Learn More
         </a>
