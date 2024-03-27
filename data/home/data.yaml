@@ -22,41 +22,27 @@ goals:
   - title: "Multi-Tenancy for Peace of Mind."
     text: |-
       kcp implements fully-isolated workspaces, each acting as its own Kubernetes-like cluster, with its own URL endpoint, its own set of APIs (e.g. different CRDs), its own RBAC, but as cheap and quick as a namespace.
-
-      Changing workspaces is as easy as changing directories with our kubectl plugin.
   - title: "APIs as a Service."
     text: |-
       kcp extends Kubernetes' CRD extension model to an API export mechanism optimized for SaaS service providers offering APIs to thousands or many tens of thousands of user workspaces -- Securely and efficiently.
-
-      Centrally provide APIs to users and implement one set of operators that is capable of reconciling all resources created from your API in any workspace.
   - title: "Building Block, Not Walled Garden."
     text: |-
-      kcp does not replace Kubernetes, but complements it as a backend to host Kubernetes-like APIs as SaaS.
-
-      Connect whatever service your teams need by writing an operator that understands kcp. Operate Kubernetes clusters from kcp as central control plane.
+      kcp does not replace Kubernetes, but complements it as a backend to host Kubernetes-like APIs as SaaS. It's a flexible framework for building platforms.
   - title: "Work at Global Scale."
     text: |-
-      kcp schedules workspaces to kcp instances called shards, similarly to pods get scheduled to nodes.
-
-      Our ambitions are to eventually reach 1 million workspaces and 10,000 shards.
+      kcp schedules workspaces to kcp instances called shards, similarly to pods get scheduled to nodes. Our ambitions are to eventually reach 1 million workspaces and 10,000 shards.
   - title: "Beyond Compute."
     text: |-
       kcp intentionally only knows generic APIs, no pods or related resources. Our goal is to build a control plane for form factors beyond container orchestration.
-
-      Platform Engineering needs more than just workload orchestration to provide good developer experience. kcp allows building higher level APIs to provide to developers, data analysts and other end users.
   - title: "Based on Kubernetes. Not a Fork."
     text: |-
-      kcp takes full advantage of Kubernetes API conventions, the glue that binds the Cloud Native Native technology ecosystem together and imbues Kubernetes' popular end-user experience.
-      
-      One rule that is set in stone: kcp exposes 100% pure Kubernetes APIs by using the latest Kubernetes releases as the basis.
-
-      We live and breath Kubernetes and the community. No compromises.
+      kcp takes full advantage of Kubernetes API conventions, the glue that binds the Cloud Native Native technology ecosystem together and imbues Kubernetes' popular end-user experience. We live and breath Kubernetes and the community. No compromises.
 
 community:
   title: "We ❤️ Collaboration"
   text: |-
     We develop kcp completely in the open. Everybody is welcome to help making the vision of kcp reality.
-
+    
     Meet us in person in the [#kcp-dev](https://kubernetes.slack.com/archives/C021U8WSAFK) channel in Kubernetes Slack. Find our code on [GitHub](https://github.com/kcp-dev/kcp).
 
     [![Grid of contributors on GitHub](https://contrib.rocks/image?repo=kcp-dev/kcp&amp;columns=15&amp;max=100 "Contributor Grid")](https://github.com/kcp-dev/kcp/graphs/contributors)
