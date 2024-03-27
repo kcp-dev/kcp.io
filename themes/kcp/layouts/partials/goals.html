@@ -4,9 +4,9 @@
     {{ if not (modBool $index 2) }}
     <div></div>
     {{- end }}
-    <div class="{{- if modBool $index 2 -}}text-right{{- end }} p-4 {{ if ne $index 0 -}}sm:-mt-12{{- end }}">
-        <h2 class="inline-block font-black text-3xl bg-gradient-to-r font-black text-transparent bg-clip-text {{ if modBool $index 2 -}}from-havelock-blue-500 to-shakespeare-500 {{- else -}}from-shakespeare-500 to-mantis-500{{- end -}}">{{ $element.title }}</h2>
-        <div class="leading-relaxed text-justify text-lg text-gray-700 [&>p]:pt-2">
+    <div class="{{- if modBool $index 2 -}}sm:text-right{{- end }} p-4 {{ if ne $index 0 -}}sm:-mt-12{{- end }}">
+        <h2 class="tracking-tight inline-block font-black text-3xl bg-gradient-to-r font-black text-transparent bg-clip-text {{ if modBool $index 2 -}}from-havelock-blue-500 to-shakespeare-500 {{- else -}}from-shakespeare-500 to-mantis-500{{- end -}}">{{ $element.title }}</h2>
+        <div class="mt-2 leading-relaxed text-justify text-xl font-light [&>p]:pt-2">
             {{ $element.text | markdownify }}
         </div>
     </div>
