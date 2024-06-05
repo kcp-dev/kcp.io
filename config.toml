@@ -81,7 +81,7 @@ prism_syntax_highlighting = false
 [[menu.main]]
 name = "Documentation"
 weight = -1000
-url = "https://docs.kcp.io/kcp/v0.23"
+url = "https://docs.kcp.io/kcp/latest"
 [[menu.main]]
 name = "GitHub"
 weight = -99
