@@ -113,8 +113,8 @@ url = "https://www.youtube.com/channel/UCfP_yS5uYix0ppSbm2ltS5Q"
 [params.links.footer.community]
 name = "Community"
 [[params.links.footer.community.links]]
-name = "Code of Conduct"
-url = "https://github.com/kcp-dev/kcp/blob/main/code-of-conduct.md"
+name = "CNCF Community Group"
+url = "https://community.cncf.io/kcp/"
 [[params.links.footer.community.links]]
 name = "Kubernetes Slack"
 url = "https://kubernetes.slack.com/archives/C021U8WSAFK"
@@ -145,6 +145,9 @@ url = "https://github.com/kcp-dev/kcp/blob/main/SECURITY.md"
 
 [params.links.footer.policies]
 name = "Policies"
+[[params.links.footer.policies.links]]
+name = "Code of Conduct"
+url = "https://github.com/kcp-dev/kcp/blob/main/code-of-conduct.md"
 [[params.links.footer.policies.links]]
 name = "Governance"
 url = "https://github.com/kcp-dev/kcp/blob/main/GOVERNANCE.md"
