@@ -10,6 +10,8 @@ tags:
   - cloudnativecon
   - talks
   - conference
+authors:
+  - Marvin Beckers
 ---
 
 [KubeCon + CloudNativeCon Europe 2024](https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/) is around the corner and we can't wait to see you in Paris!
