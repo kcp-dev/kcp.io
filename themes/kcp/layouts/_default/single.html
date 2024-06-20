@@ -8,5 +8,53 @@
     <div class="leading-7 mt-8 space-y-4 [&>h1]:text-2xl [&>h1]:font-bold [&>h2]:text-xl [&>h2]:font-bold [&>h3]:text-lg [&>h3]:font-bold [&>ul]:list-disc [&>ul]:ml-8 [&>ul>*>a]:text-cyan-600 [&>ol]:list-decimal [&>ol]:ml-8 [&>*>a]:text-cyan-600 [&>*>img]:m-4">
         {{ .Content }}
     </div>
+    {{ if .Params.authors }}
+    <div class="mt-12">
+    {{ $authors := .Site.Data.authors }}
+    {{ range .Params.authors }}
+    <div class="mx-auto flex items-center gap-6 my-4">
+        {{ $author := where $authors "name" . }}
+        {{ with (index $author 0) }}
+        {{ with .picture }}
+        <img src="{{ . }}" class="w-14 h-14 rounded-full shadow-lg">
+        {{ end }}
+        <div class="min-w-0">
+            <div class="font-bold">{{ .name }}</div>
+            {{ with .title }}
+            <div class="text-base">{{ . }}</div>
+            {{ end }}
+        </div>
+        {{ with .socials }}
+        <div class="grow">
+            <ul class="mt-2 mx-auto flex gap-4 justify-end mr-12">
+            {{ range $social, $url := . }}
+            <li>
+                <a
+                    href="{{ $url }}"
+                    rel="noreferrer"
+                    target="_blank"
+                    class="text-gray-700 transition hover:opacity-75"
+                >
+                    <span class="sr-only">{{ $social }}</span>
+
+                    <svg
+                        class="h-5 w-5"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+                        {{ partial (printf "flowbite-icons/src/solid/brands/%s.svg" $social) }}
+                    </svg>
+                </a>
+            </li>
+            {{ end }}
+            </ul>
+        </div>
+    {{ end }}
+    </div>
+    {{ end }}
+    {{ end }}
+    </div>
+    {{ end }}
 </div>
 {{ end }}
