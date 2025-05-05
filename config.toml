@@ -58,7 +58,7 @@ style = "monokai"
 guessSyntax = "true"
 
 [params]
-copyright = "2021-2024. The kcp Authors"
+copyright = "2021-2025. The kcp Authors"
 footer_note = "Kubernetes and the Kubernetes logo are registered trademarks of The Linux Foundation® (TLF)."
 footer_cncf_show = true
 footer_cncf_note = "We are a Cloud Native Computing Foundation sandbox project."
