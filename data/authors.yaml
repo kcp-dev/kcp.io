@@ -16,3 +16,15 @@
     socials:
       github: https://github.com/SimonTheLeg
       linkedin: https://www.linkedin.com/in/simon-bein/
+  - name: Nelo-T. Wallus
+    title: Development Expert at SAP
+    picture: /images/authors/nelo_t_wallus.png
+    socials:
+      github: https://github.com/ntnn
+      linkedin: https://www.linkedin.com/in/nelowallus/
+  - name: Karol Szwaj
+    title: Senior Software Engineer at Kubermatic
+    picture: /images/authors/karol_szwaj.jpg
+    socials:
+      github: https://github.com/cnvergence
+      linkedin: https://www.linkedin.com/in/karol-szwaj-00b559149/

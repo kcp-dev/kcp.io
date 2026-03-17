@@ -11,7 +11,8 @@ tags:
   - contribfest
   - contributing
 authors:
-  - kcp-maintainers
+  - Nelo-T. Wallus
+  - Karol Szwaj
 ---
 
 Pack your laptop and mark your calendar! kcp is hosting a [ContribFest session](https://kccnceu2026.sched.com/event/2EMwW/contribfest-kcp-from-zero-to-your-first-pull-request-karol-szwaj-kubermatic-nelo-t-wallus-sap) at **KubeCon + CloudNativeCon Europe 2026** in Amsterdam on **Thursday, March 26, from 11:00 to 12:15 CET in room G106**. Read on to get yourself prepared beforehand and make the most out of the session!
