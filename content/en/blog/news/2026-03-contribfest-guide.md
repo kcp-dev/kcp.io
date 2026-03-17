@@ -60,7 +60,7 @@ Let's do a quick test to confirm everything is working:
 
 1. Navigate to your cloned fork of the kcp repo
 2. From the root, run `make build`
-3. Then start a local kcp instance: `go run ./cmd/kcp start`
+3. Then start a local kcp instance: `./bin/kcp start`
 4. If kcp starts and you can connect with `kubectl --kubeconfig .kcp/admin.kubeconfig`, you're all set!
 
 ### 5. Find something to work on
